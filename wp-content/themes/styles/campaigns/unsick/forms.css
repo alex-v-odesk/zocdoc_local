@@ -1,0 +1,220 @@
+/* Buttons */
+
+.btn,
+input[type=button],
+input[type=submit] {
+    position:relative;
+    display:block;
+    background-color:rgb(255,90,118);
+    width:auto;
+    max-width:390px;
+    min-height:72px;
+    padding:0 30px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    -webkit-transform:translate3d(0,0,0);
+    -webkit-backface-visibility:hidden;
+    -webkit-perspective:1000;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    -webkit-transition:all 0.2s ease-in-out;
+    	    transition:all 0.2s ease-in-out;
+    /* Text */
+    font-family:'sharp-sans-bold', Arial, sans-serif;
+    font-size:2.2rem;
+    line-height:3.2rem;
+    font-weight:400;
+    color:rgb(255,255,255);
+    text-align:center;
+    text-decoration:none;
+}
+
+a.btn {padding:18px 30px;}
+
+a.btn::after {display:none;}
+
+input[type=submit] {
+    width:100%;
+}
+
+input[type=email],
+input[type=text] {
+    box-sizing:border-box;
+    width:100%;
+    padding:10px;
+    -webkit-appearance:none;
+    border:0px;
+    outline:0px;
+    border-radius:8px;
+    color:black;
+}
+
+input[type=checkbox] {
+    margin-right:5px;
+}
+
+select {
+    width:100%;
+    padding:7px 10px;
+    -webkit-appearance:none;
+    border:0px;
+    outline:0px;
+    border-radius:8px;
+    color:black;
+}
+
+p.for_welcome {
+    text-transform:uppercase;
+    font-size:1.2rem;
+    line-height:1.2em;
+    margin:3em 0;
+}
+
+div.form_copy {
+    font-size:3rem;
+    line-height:1.4em;
+}
+
+
+/* Btn Label */
+
+.btn_label {
+    display:block;
+    width:intrinsic;
+    margin:16px auto 0;
+    /* Text */
+    font-size:1.7rem;
+    line-height:2.4rem;
+}
+
+form p {
+    display:flex;
+    flex-direction:row;
+    margin-bottom:1em;
+}
+
+form p label {
+    display:block;
+    width:35%;
+    text-transform:uppercase;
+    font-size:1.2rem;
+    line-height: 40px;
+}
+
+form p span.wpcf7-form-control-wrap {
+    display:block;
+    width:75%;
+}
+
+form p label.for_checkbox {
+    width:100%;
+    font-size:1.5rem;
+    text-transform:none;
+}
+
+form p label.for_checkbox span {
+    display:inline;
+    width:auto;
+}
+
+div.wpcf7 img.ajax-loader {
+    height:20px;
+}
+
+div.wpcf7-mail-sent-ok {
+    display:none !important;
+}
+
+.form_with_thanks .form_thanks,
+.form_with_thanks.thanking .form {
+    display:none;
+}
+
+.form_with_thanks.thanking .form_thanks {
+    display:block;
+}
+
+.form_thanks h3 {
+    font-family:sharp-sans-medium;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:1.4rem;
+    margin-bottom:1em;
+}
+
+
+/* Responsive */
+
+
+@media only screen and (max-width : 1023px) {
+    
+    
+    /* Buttons */
+
+    .btn {
+        min-height:62px;
+        /* Text */
+        font-size:2.0rem;
+        line-height:2.6rem;
+    }
+    
+    a.btn {padding:17px 20px;}
+    
+    
+}
+
+
+@media only screen and (max-width  : 747px),
+       only screen and (max-height : 767px) {
+    
+    
+    /* Buttons */
+    
+    .btn,
+    input[type=button],
+    input[type=submit] {max-width:none;}
+
+    .btn {
+        min-height:52px;
+        /* Text */
+        font-size:1.7rem;
+        line-height:2.4rem;
+    }
+    
+    a.btn {padding:12.5px 15px;}
+    
+    
+    /* Btn Label */
+    
+    .btn_label {
+        margin-top:8px;
+        /* Text */
+        font-size:1.45rem;
+        line-height:2.0rem;
+    }
+    
+}
+
+
+
+
+
+/* share buttons */
+
+#share_buttons {}
+
+#share_buttons li {
+    display:inline-block;
+    margin-right:5px;
+}
+
+#share_buttons a {
+    border-bottom:0px;
+}
+
+#share_buttons img {
+    width:75px;
+    height:75px;
+}

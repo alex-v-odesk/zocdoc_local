@@ -1,0 +1,182 @@
+// Story Block
+.story {
+
+  //display none
+  background black
+  z-index 9
+
+  &.hidden {
+    visibility hidden
+    opacity 0
+  }
+
+  .cls-1 {
+    fill: #06215a;
+    fill-rule: evenodd;
+  }
+
+  .story-content {
+    top 0
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    margin auto
+    height 350px
+    max-width 950px
+    width 100%
+  }
+
+  #mission-canvas {
+    //height 200%
+    transform translateY(-50%)
+  }
+
+  .bg-image {
+    position absolute
+    width 100vw
+    height 100vh
+    top 10px
+    left 0
+    opacity 0.5
+  }
+
+  .layer-color {
+    position absolute
+    left 0
+    top 0
+    height 100%
+    width 100%
+    background black
+    opacity 0
+  }
+
+  h2 {
+    color white
+    text-align center
+    width 100%
+    fontsize-90()
+    position relative
+    padding-bottom 20px
+  }
+
+  p {
+    max-width 700px
+    width 75%
+    text-align center
+    margin 0 auto
+    fontsize-24-medium()
+    line-height 3.8rem
+    padding 40px 0
+    color white
+    position relative
+    padding-bottom 80px
+  }
+
+  .canvas {
+    z-index 30
+    position fixed
+    left 0
+    top 0
+    right 0
+    bottom 0
+    height 100vh
+    width 100%
+  }
+
+  .mask-wrapper {
+    width 50px
+    height 75px
+    margin 0px auto
+    padding 0
+    display block
+    position relative
+    cursor pointer
+
+    &:hover {
+
+      svg{
+        transform scale3d(1.1, 1.1, 1.1)
+      }
+      span{
+        opacity 0.8
+      }
+    }
+
+
+    svg {
+      width 60px
+      padding-bottom 10px
+      transform scale3d(1, 1, 1) translateZ(0)
+      position relative
+      backface-visibility hidden
+      will-change transform
+      transition 0.2s transform ease-out
+
+    }
+
+    span {
+      fontsize-20-strong()
+      color white
+      font-weight bold
+      position absolute
+      bottom -15px
+      left 0
+      width 150px
+      opacity 1
+      text-align center
+      transform translate3d(-50px, 0, 0)
+      transition 0.3s all cubic-bezier(0.770, 0.000, 0.175, 1.000)
+    }
+  }
+
+  .story-video-overlay {
+
+    position absolute
+    left 0
+    right 0
+    top 0
+    height 100%
+    width 100%
+    margin: 0px auto
+    //z-index 30
+    opacity 0
+
+    .video-container {
+      height 520px
+      width 1000px
+
+      .custom-video-controls-container {
+        width 70%
+      }
+    }
+
+    .story-video {
+      position relative
+    }
+
+    .btn-back {
+
+      display block
+      outline none
+      border none
+      background none
+      position absolute
+      top 0
+      right 0
+      cursor pointer
+      z-index 60
+      width 45px
+      height 45px
+
+      transition 0.3s all ease-out
+      transform scale3d(1, 1, 1) translateZ(0)
+
+      &:hover {
+        transform scale3d(1.1, 1.1, 1.1) translateZ(0)
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,349 @@
+.series {
+  $ZMainVideoLayer = 1;
+  $ZMainVideoContent = 5;
+  $ZSerieVideoMainVideo = 5;
+  $ZCTA = 20;
+  $ZMainVideo = 220;
+  $ZseriesContainer = 100;
+  $ZMaskMain = 200;
+  $ZMainVideoCTA = 250;
+
+  $ctaOpacityOnHover = 0.75;
+
+  width 100%
+  min-height 100vh
+  background white
+
+  .cta {
+    z-index $ZCTA;
+    margin 0 auto
+    cursor pointer
+    position relative
+    // no reason to have 100%.
+    width auto;
+
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.4s ease-out;
+
+    p {
+      cursor pointer
+      width 100%
+      float left
+      font-size 3rem
+      font-family sharp-sans-bold
+      color gulf-blue
+      position relative
+      display inline-block
+      cursor pointer
+
+      // transition: all 0.35s ease-in-out;
+
+      span {
+        transition: all 0.35s ease-in-out;
+        font-size: inherit;
+      }
+    }
+
+    .open, .close {
+      transition: opacity 0.4s ease-out;
+    }
+
+    .close {
+      left: 0px;
+      // position absolute
+      top 20px
+      opacity 0
+      display none
+    }
+
+    .arrow, .cross {
+      position relative
+      display inline-block
+      right -5px
+      width 17.5px
+      height auto
+      cursor pointer
+    }
+
+    .cross {
+      position absolute
+      right -25px
+      top 10px
+    }
+
+    .arrow {
+      bottom: -1px;
+    }
+
+    .line {
+      display: none;
+    }
+
+    /*.line{
+      width 0px
+      left 0
+      right 0
+      margin auto
+      position absolute
+      background gulf-blue
+      bottom -5px
+      height 3px
+
+      transition: width 0.5s ease-in-out;
+    }*/
+
+    &:hover {
+      // transform: translate3d(0px, -9px, 0px);
+      // .line {
+      //   width: 100%;
+      // }
+      p {
+        span {
+          opacity: $ctaOpacityOnHover;
+        }
+      }
+
+    }
+
+  }
+
+  .main-video .poster {
+    display flex
+    align-items center
+    justify-content center
+
+    .content {
+      position relative
+      z-index $ZMainVideoContent;
+    }
+
+    .layer {
+      z-index $ZMainVideoLayer;
+      position absolute
+      width 100%
+      height 100%
+      background rgba(0, 0, 0, .3)
+      left 0
+      top 0
+    }
+
+    h4 {
+      fontsize-28()
+      color mauve
+      width 100%
+    }
+
+    h5 {
+      padding 20px 0
+      fontsize-20-strong()
+      width 100%
+      color white
+
+      span {
+        fontsize-20-strong()
+        color santas-gray
+      }
+    }
+
+    .play {
+      width 100%
+      text-align center
+
+      img {
+        width 20px
+      }
+    }
+  }
+
+  .serie-video, .main-video {
+    position absolute
+    overflow visible
+    -webkit-backface-visibility hidden
+    -webkit-transform translateZ(0) scale(1, 1)
+    z-index $ZSerieVideoMainVideo
+
+    .poster {
+      position absolute
+      width 100%
+      height 100%
+      opacity 0
+      left 0
+      right 0
+      margin auto
+      top 0
+    }
+  }
+
+
+  .mask {
+    position absolute
+    width 102%
+    height 102%
+    left -1%
+    top -1%
+    cursor pointer
+    z-index: $ZMaskMain;
+
+    transition: transform 500ms ease-out;
+  }
+
+  .main-video {
+    left 0
+    right 0
+    margin auto
+    z-index $ZMainVideo
+    top 0
+    bottom 0
+    width: 700px;
+    height: 517px;
+    transition: all 250ms ease-in-out;
+
+    .video-container {
+      z-index 0
+      height 90%
+      width 90%
+      iframe {
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+
+    .cta {
+      // margin-top 30px
+      margin-top 15%;
+      fontsize-28()
+      position relative
+      z-index $ZMainVideoCTA
+    }
+
+    .content {
+      transition: transform 250ms ease-in-out;
+    }
+
+    &.expanded {
+      width: 300px;
+      height: 221px;
+      top: -40%;
+
+      .content {
+        transform: scale(0.5, 0.5);
+      }
+
+      .cta {
+
+        margin-top 5%;
+
+        .open {
+          opacity: 0;
+          display: none;
+        }
+        .close {
+          cursor: pointer;
+          opacity: 1;
+          display: block;
+        }
+
+      }
+    }
+
+    &.playing {
+      .mask {
+        transform: scale(2.0,2.0);
+      }
+    }
+
+    // &:hover {
+    //   .poster {
+    //     // this won't work because Tweenmax writes styles inline
+    //     // transform: scale(1.05, 1.05);
+    //   }
+    // }
+  }
+
+  .serie-video {
+    top 0
+    width 30%
+    height 22%
+    margin auto
+    left 0
+
+    .poster {
+      position relative
+    }
+  }
+
+  .series-container {
+    position absolute
+    display none
+    visibility hidden
+    left 0
+    right 0
+    margin auto
+    width 50vw
+    top 53vh
+    right 0
+    height 50vh
+    max-height 450px
+    max-width 600px
+    z-index $ZseriesContainer
+
+    .serie-video {
+      .poster {
+        width 150px
+        height 125px
+      }
+    }
+  }
+
+  .block-video-1 {
+    left 0
+    right 0
+  }
+
+  .block-video-2 {
+    left auto
+    right 0
+  }
+
+  .block-video-3 {
+    top 42%
+    left 16%
+    right auto
+    z-index 0
+  }
+
+  .block-video-4 {
+    top 42%
+    left auto
+    right 16%
+    z-index 0
+  }
+
+  h5 {
+    padding-top 15px
+    opacity 0
+    width 100%
+    fontsize-14-strong()
+    position relative
+    color dark-grey
+  }
+
+  h6 {
+    opacity 0
+    width 100%
+    fontsize-14()
+    position relative
+    color manatee
+  }
+
+  .container-video-main {
+    position absolute
+    z-index 100
+    width 100%
+    overflow hidden
+    height 100%
+    top 0
+    left 0
+  }
+
+}

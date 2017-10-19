@@ -1,0 +1,78 @@
+// Culture block
+
+.culture {
+
+  .overlay-content-container {
+    z-index 10
+    left 0
+    width 100%
+
+    // iphone 5 adjustment.
+    top: 25%;
+    position: absolute;
+    
+    h2 {
+      width 80%
+      fontsize-50()
+    }
+
+    p {
+      fontsize-18-strong()
+      width 75%
+      margin 5px auto 0 auto
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      opacity 1!important
+    }
+  }
+
+  .text-container {
+    img, p {
+      opacity 1!important
+    }
+  }
+
+  .press {
+    z-index 10
+    opacity 0
+    left 0
+    right 0
+    margin 0px auto
+    width 100%
+    position absolute
+
+    p {
+      fontsize-18()
+      color white
+      max-width 75%
+      margin 0px auto
+    }
+
+    .author {
+
+      fontsize-14()
+      color white
+      font-family sharp-bold
+      margin-top 35px
+      display block
+    }
+
+    .logo-list {
+
+      display block
+      margin-top 35px
+
+      li {
+        vertical-align middle
+
+        img {
+          width 40px
+        }
+      }
+    }
+  }
+
+}

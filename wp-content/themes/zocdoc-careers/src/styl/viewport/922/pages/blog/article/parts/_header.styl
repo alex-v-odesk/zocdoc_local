@@ -1,0 +1,45 @@
+.full-bleed-header {
+
+  width 100%
+  background-color pink-rose
+
+  .nav-prev-next {
+    display none
+  }
+
+  .full-bleed-container {
+    height 400px
+    max-width: 1024px;
+    margin 0px auto
+    padding-top 20px
+    text-align center
+
+    .content-container {
+
+      h1 {
+        fontsize-45()
+        color white
+        margin 0px auto 10px auto
+        width 100%
+        max-width 90%
+      }
+    }
+
+    .info {
+      max-width 80%
+      margin 0px auto
+      span {
+        margin 5px 5px
+      }
+    }
+
+  }
+
+  &.has-thumbnail {
+
+    .full-bleed-container {
+      height 450px
+      padding-top 120px
+    }
+  }
+}

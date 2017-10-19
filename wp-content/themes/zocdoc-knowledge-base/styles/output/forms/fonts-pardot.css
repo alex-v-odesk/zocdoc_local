@@ -1,0 +1,27 @@
+/*@font-face {
+  font-family: kievit-slab-book;
+  src: url('../fonts/kievit-slab/KievitSlabPro-Book.woff') format('woff'), url('../fonts/kievit-slab/KievitSlabOffc-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: sharp-sans-medium;
+  src: url('../fonts/sharp-sans/SharpSans-No1-Medium.eot');
+  src: url('../fonts/sharp-sans/SharpSans-No1-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/sharp-sans/SharpSans-No1-Medium.woff') format('woff'), url('../fonts/sharp-sans/SharpSans-No1-Medium.ttf') format('truetype'), url('../fonts/sharp-sans/SharpSans-No1-Medium.svg#sharp-sans-medium') format('svg');
+  font-weight: 400;
+  font-style: normal
+}*/
+@font-face {
+  font-family: sharp-sans-semibold;
+  src: url('http://pardot.zocdoc.com/l/45052/2016-03-09/6pfczg/45052/95409/SharpSans_No1_Semibold.eot');
+  src: url('http://pardot.zocdoc.com/l/45052/2016-03-09/6pfczg/45052/95409/SharpSans_No1_Semibold.eot?#iefix') format('embedded-opentype'), url('http://pardot.zocdoc.com/l/45052/2016-03-09/6pfczn/45052/95411/SharpSans_No1_Semibold.woff') format('woff'), url('http://pardot.zocdoc.com/l/45052/2016-03-09/6pfd1g/45052/95413/SharpSans_No1_Semibold.ttf') format('truetype'), url('http://pardot.zocdoc.com/l/45052/2016-03-09/6pfd1j/45052/95415/SharpSans_No1_Semibold.svg#sharp-sans-semibold') format('svg');
+  font-weight: 400;
+  font-style: normal
+}
+/*@font-face {
+  font-family: sharp-sans-bold;
+  src: url('../fonts/sharp-sans/SharpSans-No1-Bold.eot');
+  src: url('../fonts/sharp-sans/SharpSans-No1-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/sharp-sans/SharpSans-No1-Bold.woff') format('woff'), url('../fonts/sharp-sans/SharpSans-No1-Bold.ttf') format('truetype'), url('../fonts/sharp-sans/SharpSans-No1-Bold.svg#sharp-sans-bold') format('svg');
+  font-weight: 400;
+  font-style: normal
+}*/

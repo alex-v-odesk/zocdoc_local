@@ -1,0 +1,143 @@
+// Patiens Block
+
+.patients {
+
+  height auto
+  margin 0
+  padding 0
+  overflow auto
+  position relative
+
+  h2 {
+    fontsize-50()
+    padding: 18vh 0 5vh 0;
+  }
+
+  .patients-content {
+    width 100%
+    margin 0 auto
+    height auto
+    padding-bottom 20px
+  }
+
+  .patient-block {
+    height auto
+    margin 40px 10px
+    display block
+    overflow hidden
+
+    .content-block {
+      width auto
+    }
+
+    .quote {
+      width 100%
+      height auto
+      background none
+      border-radius 20px
+      position relative
+
+      .img {
+        padding 30px 0
+        text-align center
+        background white
+        width 150px
+        height 150px
+        border-radius border-radius-block
+        float right
+
+        img {
+          width auto
+          max-height 100%
+        }
+      }
+
+      .text {
+        width auto
+        font-size 2rem
+        fontsize-18-strong()
+        color gulf-blue
+        margin 10px 0 0 100%
+        padding 15px
+        width 60%
+        max-width 200px
+        bottom 0
+        background white
+        border-radius border-radius-block
+        position relative
+        float right
+      }
+
+      .round {
+        display none
+      }
+    }
+
+    .type {
+      margin 10px 0 0 0
+      float right
+
+      .typing {
+        float right
+        left auto
+        right 0
+      }
+
+      img {
+        display inline-block
+        height 37.5px
+        width 37.5px
+        float right
+      }
+
+      p {
+        padding 3px 12px 4px 3px
+        display inline-block
+        fontsize-14()
+
+        span {
+          fontsize-14-strong()
+        }
+      }
+    }
+
+    &:nth-child(2n+1) {
+
+      .quote {
+
+        .img {
+          float left
+        }
+
+        .text {
+          float left
+          margin 10px 100% 0 0
+        }
+      }
+
+      .type {
+        float left
+
+        .typing {
+          float left
+          left 0
+          right auto
+        }
+
+        img {
+          float left
+        }
+
+        p {
+          padding 3px 3px 4px 12px
+        }
+      }
+
+    }
+
+    &:first-child {
+      margin 0 10px 40px
+    }
+  }
+
+}

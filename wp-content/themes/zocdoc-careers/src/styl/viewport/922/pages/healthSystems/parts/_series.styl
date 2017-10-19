@@ -1,0 +1,130 @@
+.series {
+  width 100%
+  min-height 100vh
+  height auto
+
+  .cta {
+    margin-top -12px
+    left -20px
+    width 200px
+
+    p, p.close, p.open {
+      font-size 2rem
+      width 290px
+      left -20px
+    }
+
+    .arrow, .cross {
+      width 12.5px
+      right 25px
+    }
+    
+    .line {
+      display: none;
+    }
+    // .open {
+    //   display: block;
+    //   opacity: 1;
+    // }
+    .close {
+      // display: none;
+      // opacity: 1;
+      top: 0px;
+      .cross {
+        position: absolute;
+        top: 12px;
+      }
+    }
+  }
+
+  .main-video .poster {
+    display flex
+    align-items center
+    justify-content center
+
+    .content {
+      position relative
+      z-index 5
+    }
+
+    .layer {
+      z-index 1
+      position absolute
+      width 100%
+      height 100%
+      background rgba(0, 0, 0, .3)
+      left 0
+      top 0
+    }
+
+    h4 {
+      // too small so disabled.
+      // fontsize-14-strong()
+      color mauve
+      width 100%
+    }
+
+    h5 {
+      padding 10px 0
+      fontsize-14-strong()
+      width 100%
+      color white
+
+      span {
+        fontsize-14-strong()
+        color santas-gray
+      }
+    }
+
+    .play {
+      width 100%
+      text-align center
+
+      img {
+        width 15px
+      }
+    }
+  }
+
+  .main-video {
+    left 0
+    right 0
+    margin auto
+    z-index 10
+    width 90%
+    .content {
+      transform: scale(0.5, 0.5);
+    }
+
+    &.expanded {
+      top: -45%;
+    }
+  }
+
+  .series-container {
+    width 90vw
+    top 30vh
+    right 0
+    height 290px
+    z-index 10
+    position relative
+    display block
+
+    .serie-video {
+
+      .poster {
+        height 85px
+      }
+
+    }
+  }
+
+  h5 {
+    padding-top 5px
+    fontsize-14-strong()
+  }
+
+  h6 {
+    fontsize-14()
+  }
+}

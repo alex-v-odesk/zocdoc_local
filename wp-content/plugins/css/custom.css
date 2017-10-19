@@ -1,0 +1,27 @@
+#zocdoc-cron{    
+    background: #fff;
+    border-left: 4px solid #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px;
+    clear: both;
+    margin-top: 30px;
+    float: left;
+    width: 99%;
+    padding: 10px 10px 20px 10px;
+}
+#zocdoc_xml_file{
+    background: #fff;
+    border-left: 4px solid #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px;
+    clear: both;
+    margin-top: 30px;
+    float: left;
+    width: 96%;
+    padding: 10px 10px 20px 10px;
+}
+#zocdoc_xml_file h1{
+    padding: 9px 0 10px;
+}

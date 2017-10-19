@@ -1,0 +1,69 @@
+.full-bleed-header {
+
+  .full-bleed-container {
+
+    height 500px
+    padding-left 0
+
+    .canvas-container {
+
+        max-width inherit
+        height 100%
+        width 100%
+        top -30px
+        left 0px
+        position relative
+
+      .canvas {
+          pointer-events none
+      }
+    }
+
+    .content-container {
+      width 90%
+      margin 0px auto
+      top 15%
+      left 0
+      right 0
+      height 100%
+      padding 100px 50px
+
+      h1 {
+        font-size 3rem
+        line-height 3.5rem
+        color gulf-blue
+      }
+
+      a {
+        fontsize-14-strong()
+      }
+    }
+
+  }
+
+  .carousel-items-container {
+
+      height 150px
+      width 300%
+
+      ul {
+
+        max-width initial
+        width 100%
+
+      }
+
+  }
+
+}
+
+@media only screen and (max-device-width : 922px) and (orientation : landscape)  {
+
+  .full-bleed-header .full-bleed-container {
+    min-height 90vh
+    .content-container {
+      padding 5% 50px !important
+    }
+  }
+
+}

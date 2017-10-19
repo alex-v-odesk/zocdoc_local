@@ -1,0 +1,217 @@
+#health-systems {
+
+  min-height 100vh
+
+  .pardot-overlay {
+    position fixed
+    width 100%
+    height 100%
+    left 0
+    top 0
+    right 0
+    bottom 0
+    z-index -1
+    display table
+    background-color rgba(255,255,255,0.5)
+    visibility hidden
+    opacity 0
+    transition 0.2s all ease-out
+    overflow scroll
+    min-height 90vh
+
+    .iframe-container {
+      display table-cell
+      vertical-align middle
+      text-align center
+
+      .wrapper {
+        position relative
+        margin 0px auto
+        width 350px
+
+        .btn-close {
+
+          position absolute
+          border none
+          outline none
+          display block
+          top 20px
+          right 0px
+          z-index 10
+          margin 0
+          border-radius 0
+          background none
+          padding 15px 10px
+          transition none
+          cursor pointer
+
+          span {
+            width 15px
+            height 2px
+            display block
+            background gulf-blue
+            position relative
+
+            &.line-1 {
+              transform rotate(45deg)
+              top: 1px;
+            }
+
+            &.line-2 {
+              top: -1px;
+              transform rotate(-45deg)
+            }
+          }
+        }
+
+        iframe {
+          width 350px
+          transform translate3d(0, 20px, 0);
+          transition 0.2s all ease-out
+        }
+      }
+    }
+
+    &.active {
+      visibility visible
+      opacity 1
+      z-index 10001
+
+      iframe {
+        transform translate3d(0, 0, 0);
+      }
+    }
+
+  }
+
+  .hs-btn-contact {
+    position relative
+    border none
+    outline none
+    display block
+    margin auto
+    border-radius 0
+    cursor pointer
+    background zocdoc-yellow
+    padding 12px 40px
+    margin-top 40px
+    transition.2s ease-out
+    text-decoration none
+    fontsize-24-strong()
+    color gulf-blue
+    transition all .2s ease-out
+
+
+    &:hover {
+      background gulf-blue
+      color white
+    }
+  }
+
+  #main-canvas {
+    position fixed
+    width 100%
+    height 100vh
+    z-index 2
+    left 0
+    top 0
+  }
+
+  .zeeface-svg {
+    z-index: 1
+    position absolute
+    width 45vw
+    left 0
+    right 0
+    bottom 0
+    top 0
+    margin auto
+    opacity 0
+
+    path {
+      fill #6adef9
+    }
+  }
+
+  article {
+    z-index 10
+    overflow-y hidden
+    overflow-x hidden
+  }
+
+  .full-size-block {
+    min-height 100vh
+    overflow hidden
+    height 100%
+    width 100%
+    position absolute
+    margin 0
+    padding 0
+  }
+
+  .arrow {
+    cursor pointer
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    height 25px
+    width 20px
+    margin auto
+
+    span {
+      position absolute
+      border-radius 10px
+      width 3px
+    }
+
+    .middle {
+      left 0
+      right -1px
+      bottom 0.5px
+      height 100%
+      margin auto
+    }
+
+    .line {
+      bottom -1px
+    }
+
+    .left-line {
+      left 3px
+      height 15px
+      transform rotate(-45deg)
+      -webkit-transform rotate(-45deg)
+      -moz-transform rotate(-45deg)
+    }
+
+    .right-line {
+      right 2px
+      height 15px
+      transform rotate(45deg)
+      -webkit-transform rotate(45deg)
+      -moz-transform rotate(45deg)
+    }
+
+  }
+
+/*==========  Parts  ==========*/
+@import "parts/_start";
+@import "parts/_calendar";
+@import "parts/_patient";
+@import "parts/_intro";
+@import "parts/_search";
+@import "parts/_loyalty";
+@import "parts/_market";
+@import "parts/_smart";
+@import "parts/_stars";
+@import "parts/_percentage";
+@import "parts/_zocdoc";
+@import "parts/_clients";
+@import "parts/_series";
+@import "parts/_contact";
+
+/*==========  Components  ==========*/
+@import "components/_videoPlayer";
+
+}

@@ -1,0 +1,167 @@
+.full-bleed-header {
+
+  //width 100%
+  background-color pink-rose
+
+  &[data-color-category='partnership']{
+    background-color #39E4AD
+  }
+  &[data-color-category='company']{
+    background-color #44D8FB
+  }
+  &[data-color-category='patients']{
+    background-color #FCB5C9
+  }
+  &[data-color-category='provider']{
+    background-color #F96573
+  }
+  &[data-color-category='tech']{
+    background-color #C191FF
+  }
+  &[data-color-category='default']{
+    background-color #FCB5C9
+  }
+
+  .nav-prev-next {
+    position absolute
+    top 25%
+    max-width 180px
+    cursor pointer
+    color white
+
+    a{
+      fontsize-14-strong()
+      color white
+      text-decoration none
+      //opacity 0
+      transition 0.2s all ease-out
+    }
+
+    .title {
+      fontsize-14-strong()
+      color white
+      text-decoration none
+      transform translate(0, 0)
+      transition 0.2s all ease-out
+    }
+
+    span {
+      display block
+      color white
+      fontsize-14-medium()
+      padding-bottom 10px
+      opacity 0
+      transform translate(0, 5px)
+      transition 0.2s all ease-out
+    }
+
+    &.previous {
+      left 3%
+      text-align left
+    }
+    &.next {
+      right 3%
+      text-align right
+    }
+
+    .arrow {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transition 0.2s all ease-out
+      &.next {
+        right: -30px;
+        transform translate(-5px,0)
+      }
+      &.previous {
+        transform rotate(-180deg) translate(-5px,0)
+        left: -30px;
+      }
+    }
+
+    &:hover {
+      &.previous {
+        a {
+          opacity 1
+        }
+        span {
+          transform translate(0,0)
+          opacity 1
+        }
+        .arrow {
+          &.previous {
+            transform rotate(-180deg) translate(0,0)
+          }
+        }
+      }
+      &.next {
+        a {
+          opacity 1
+        }
+        span {
+          transform translate(0,0)
+          opacity 1
+        }
+        .arrow {
+          &.next {
+            transform translate(0,0)
+          }
+        }
+      }
+    }
+  }
+
+  &.has-thumbnail {
+    .full-bleed-container {
+      height 650px
+      padding-top 120px
+
+      .content-container {
+        position: relative;
+        top: -30%;
+      }
+    }
+    .nav-prev-next {
+      top: 35%;
+    }
+  }
+
+  .full-bleed-container {
+    height 450px
+    max-width: 1024px;
+    margin 0px auto
+    padding-top 20px
+    text-align center
+
+    .content-container {
+      // position: relative;
+      // top: 0;
+
+      h1 {
+        fontsize-50()
+        color white
+        margin 0px auto 10px auto
+        width 100%
+        max-width 80%
+      }
+
+      .addtoany_list {
+        display block
+        margin-top 20px
+        a {
+          height: 16px;
+          width: 16px;
+          padding 0
+          margin: 0px 5px
+          img {
+            max-height: 16px;
+            max-width: 16px;
+            height 100%
+            width auto
+          }
+        }
+      }
+    }
+
+  }
+}

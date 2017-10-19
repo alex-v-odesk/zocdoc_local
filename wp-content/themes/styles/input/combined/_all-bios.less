@@ -1,0 +1,128 @@
+.all-bios {
+    @media @desktop {
+        padding: 5em 0;
+    }
+    @media @mobile { 
+        padding: 2em 3em 5em 3em;
+    }
+    text-align: center;
+
+    .bios-header {
+        padding: 3em 0;
+        text-align: center;
+        color: @darkblue;
+
+        h5 {
+            font-family: sharp-sans-medium, Arial, sans-serif;
+        }
+        @media @desktop {
+            width: 73%;
+            margin: auto;
+        }
+        @media @mobile {
+            h2 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+    }
+    .grid {
+        .person {
+            position: relative;
+            vertical-align: top;
+
+            &:hover {
+                a {
+                    text-decoration: underline;
+                }
+            }
+            a {
+                color: black;
+                font-family: sharp-sans-bold, Arial, sans-serif;
+            }
+            p {
+                font-family: sharp-sans-semibold, Arial, sans-serif;
+            }
+            @media @desktop {
+                display: inline-block;
+                width: 24%;
+                padding: 5em 0 2em 0;
+            }
+            @media @mobile {
+                padding: 2em 0;
+                a, p {
+                    color: @darkblue;
+                }
+                div, a {
+                    font-size: 14px;
+                }
+            }
+            .overlay {
+                position: absolute;
+                height: 202px;
+                width: 202px;
+                border-radius: 202px;
+                left: 50%;
+                .transform(translateX(-50%));
+                background-size: cover;
+                background-position: center center;
+                background-color: #FFF04B;
+                background-size: 40%;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+            &:nth-of-type(5n+1) {
+                .overlay {
+                    background-image: url('../images/cover1.png');
+                }
+            }
+            &:nth-of-type(5n+2) {
+                .overlay {
+                    background-image: url('../images/cover2.png');
+                }
+            }
+            &:nth-of-type(5n+3) {
+                .overlay {
+                    background-image: url('../images/cover3.png');
+                }
+            }
+            &:nth-of-type(5n+4) {
+                .overlay {
+                    background-image: url('../images/cover4.png');
+                }
+            }
+            &:nth-of-type(5n+5) {
+                .overlay {
+                    background-image: url('../images/cover5.png');
+                }
+            }
+            .headshot {
+                text-align: center;
+                opacity: 1;
+                backface-visibilty: hidden;
+                -webkit-backface-visibility: hidden;
+                .transition(opacity 250ms ease);
+
+                @media @desktop {
+                    height: 202px;
+                    width: 202px;
+                    border-radius: 202px;
+                }
+                @media @mobile {
+                    width: 202px;
+                    height: 202px;
+                    border-radius: 202px;
+                }
+                background-size: cover;
+                background-position: center center;
+                margin: 0 auto 1.5em auto;
+                display: block;
+            }
+            &:hover {
+                .headshot {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

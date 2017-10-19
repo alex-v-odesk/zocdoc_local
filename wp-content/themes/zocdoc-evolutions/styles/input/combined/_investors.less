@@ -1,0 +1,79 @@
+.investors-page {
+  overflow: auto;
+
+  @media @desktop {
+    padding: 8em 0;
+  }
+  @media @mobile {
+    padding: 5em 0;
+  }
+  .investors-header {
+    text-align: center;
+    color: @darkblue;
+
+    h5 {
+      font-family: sharp-sans-medium, Arial, sans-serif;
+    }
+    @media @desktop {
+      padding: 0 0 8em 0;
+      width: 73%;
+      margin: auto;
+    }
+    @media @mobile {
+      padding: 0 2em 3em 2em;
+
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+  .investor {
+    // overflow: auto;
+
+    @media @desktop {
+      clear: both;
+      width: 90%;
+
+      p {
+        font-size: 20px;
+        line-height: 28px;
+        padding-right: 10%;
+        font-family: kievit-slab-book,Georgia,serif;
+      }
+    }
+    @media @mobile {
+      padding: 3em;
+    }
+    margin: 0 auto;
+
+    section {
+      position: relative;
+      p {
+        color: @darkblue;
+        font-family: kievit-slab-book,Georgia,serif;
+      }
+
+      img {
+        @media @desktop {
+          position: absolute;
+          max-height: 150px;
+          max-width: 23%;
+          left: 0;
+          top: 50%;
+          .transform(translateY(-50%));
+        }
+        @media @mobile {
+          display: block;
+          max-width: 75%;
+          margin: 0 auto 1em auto;
+        }
+        opacity: 0.5;
+      }
+      @media @desktop {
+        width: 100%;
+        padding: 2em 0 2em 25%;
+      }
+    }
+  }
+}

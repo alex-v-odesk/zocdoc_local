@@ -1,0 +1,176 @@
+.page-header {
+  background white
+  height 38px
+
+  .logo {
+    position relative
+    left 0
+    width 100%
+    font-size 2rem
+    padding 5px
+    text-align center
+    display block
+
+    a {
+      width 100%
+
+      strong {
+        fontsize-24-strong()
+      }
+    }
+  }
+
+  .content-navigation {
+    overflow-x scroll
+    -ms-overflow-style: none;
+    position absolute
+    width auto
+    right 0
+  }
+
+  .dropdown-cta {
+    display block
+  }
+
+  .btn-search {
+    top 10px
+  }
+
+  .btn-join, .btn-about {
+    position absolute
+    top 0
+    padding 1px 8px
+  }
+
+  .btn-join {
+    margin-top 6px
+    padding: 0px 4px;
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    position relative
+    display block
+    top 0
+    height 41px
+    padding 0
+
+    .content-menu {
+      top 0
+      position relative
+      left 0
+      right 0
+      margin auto
+      height 100%
+      white-space nowrap
+      overflow-x scroll
+      overflow-y hidden
+      overflow: -moz-hidden-unscrollable;
+    }
+
+    li {
+      padding 10px 15px
+      display: inline-block;
+      // float left
+      cursor pointer
+      white-space: nowrap;
+
+      &:hover {
+        opacity 1
+      }
+
+    }
+
+    &.topics-bar {
+      position absolute
+      top 38px
+      height auto
+
+      .article-title {
+        display none
+      }
+
+      ul {
+        max-width 100%
+        overflow hidden
+        position relative
+        transition 0.3s all ease-in-out
+        max-height 0
+        //height 0
+        //opacity 0
+        li {
+          display block
+          width 100%
+          height 100px
+          border-bottom 1px solid light-grey
+          a {
+            .title {
+              text-align left
+              padding 15px 0px 0px 90px
+            }
+            .round-mask {
+              background pink-rose
+              width 50px
+              height 50px
+              top: 20px;
+              left: 20px;
+              position absolute
+              margin 0
+
+              img {
+                float left
+                height 60px
+                width auto
+                position relative
+                left 50%
+                top 50%
+                transform translate(-50%, -50%)
+              }
+            }
+            .description {
+              margin 0
+              padding 10px 15px 0px 90px
+              white-space normal
+              text-align left
+              width 100%
+            }
+
+          }
+          &:hover {
+            a {
+              box-shadow none
+              height 100%
+            }
+          }
+        }
+      }
+      &.active {
+        ul {
+          max-height 100vh
+        }
+      }
+    }
+  }
+
+  &.careers-list, &.careers, &.healthsystems {
+
+    .navigation {
+      top -1px
+      overflow-y scroll
+    }
+
+    .btn-about {
+      display none
+    }
+  }
+
+  &.careers-list {
+
+
+
+    .bg {
+      top 0
+    }
+  }
+
+}

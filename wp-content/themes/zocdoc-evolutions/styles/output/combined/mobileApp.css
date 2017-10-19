@@ -1,0 +1,21 @@
+
+.page-links-bar{
+  top: 0px !important;
+  margin-top:0px !important;
+  position: fixed;
+  width: 100%;
+}
+
+.main-container.sticky-pad{
+  /*margin-top:0px !important;*/
+  /*top:0px;*/
+  padding-top: 48px !important;
+}
+
+.main-container.sticky-pad.expand-nav{
+  padding-top: 96px !important;
+}
+
+.clear-header {
+  margin-top:0 !important;
+}

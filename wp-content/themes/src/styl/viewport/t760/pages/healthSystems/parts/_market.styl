@@ -1,0 +1,142 @@
+.market {
+  display block
+  align-items inherit
+  justify-content inherit
+  background white-lila
+
+  h2 {
+    position relative
+    color gulf-blue
+    line-height 120%
+    fontsize-35()
+    text-align center
+  }
+
+  p {
+    text-align center
+    padding-top 30px
+    color scorpion
+    line-height 25px
+
+    strong {
+      font-weight 900
+    }
+  }
+
+  .content {
+    position absolute
+    width 500px
+    height 250px
+    left 0
+    right 0
+    top 0
+    bottom 0
+    margin auto
+
+    &.second-content {
+
+      p, h2 {
+        opacity 0
+      }
+
+      button {
+        margin-top 30px
+        opacity 0
+        background none
+
+        &:hover {
+          a {
+            color gulf-blue
+          }
+
+          &::after {
+            left 10px
+          }
+        }
+
+        &::after {
+          content '\2192'
+          position relative
+          left 5px
+          top -1px
+          transition 0.2s all ease-out
+          font-size 20px
+          font-weight 600
+        }
+
+        &:focus {
+          outline none
+        }
+      }
+
+    }
+  }
+
+  img {
+    position absolute
+  }
+
+  .top-left {
+    top -35%
+    width 45%
+    transform rotate(0deg)
+    height auto
+    left -5%
+    max-width 1000px
+  }
+
+  .top-right {
+    top -40%
+    width 40%
+    right 5%
+    transform rotate(0deg)
+    height auto
+    max-width 660px
+  }
+
+  .bottom-left {
+    top 120%
+    width 40%
+    max-width 660px
+    left -2.5%
+    transform rotate(0deg)
+    height auto
+  }
+
+  .bottom-right {
+    top 140%
+    width 45%
+    right 5%
+    max-width 1000px
+    transform rotate(0deg)
+    height auto
+  }
+
+  .bottom-left-second {
+    top 140%
+    width 40%
+    left 55%
+    max-width 1000px
+    transform rotate(0deg)
+    height auto
+  }
+
+  .bottom-right-second {
+    top 120%
+    width 40%
+    max-width 660px
+    left -2.5%
+    transform rotate(0deg)
+    height auto
+  }
+
+  .client {
+    right 100%
+    margin-right 50px
+  }
+
+  .doctor {
+    left 100%
+    margin-left 50px
+  }
+}

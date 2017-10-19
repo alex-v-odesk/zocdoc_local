@@ -1,0 +1,60 @@
+.full-bleed-header {
+
+  //width 100%
+  padding-top 30%
+  position relative
+  background-size cover
+  background-position 50% 50%
+  background-repeat no-repeat
+
+  &[data-color-category='partnership']{
+    background-color #39E4AD
+  }
+  &[data-color-category='company']{
+    background-color #44D8FB
+  }
+  &[data-color-category='patients']{
+    background-color #FCB5C9
+  }
+  &[data-color-category='provider']{
+    background-color #F96573
+  }
+  &[data-color-category='tech']{
+    background-color #C191FF
+  }
+  &[data-color-category='default']{
+    background-color #FCB5C9
+  }
+
+  .full-bleed-container {
+    //height 650px
+    margin 0px auto
+    text-align center
+    position absolute
+    width 100%
+    height 100%
+    left 0
+    top 0
+
+    .content-container{
+      margin 0px auto
+      max-width: 1280px;
+
+      h1 {
+        fontsize-90()
+        color white
+        margin 0px auto 10px auto
+        width 100%
+      }
+
+      p {
+        fontsize-18-medium()
+        color white
+        max-width 550px
+        width 100%
+        margin 0px auto
+      }
+    }
+
+  }
+}

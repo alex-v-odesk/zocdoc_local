@@ -1,0 +1,46 @@
+// Perks Block
+
+.perks {
+
+  h2 {
+    fontsize-50()
+  }
+
+  h3 {
+    fontsize-24-strong()
+  }
+
+  .perks-content {
+    width 100%
+    padding-bottom 30px
+  }
+
+  .perk-block {
+    margin 0
+    display inline-block
+    width 49.5%
+    position relative
+    height 300px
+    top 50px
+
+    .img {
+      width 100%
+
+      img {
+        width auto
+        max-height: 175px;
+      }
+    }
+
+    .text {
+      left 0
+      width 80%
+      fontsize-24()
+    }
+
+    &:nth-child(2n+1) {
+      top 0
+    }
+  }
+
+}

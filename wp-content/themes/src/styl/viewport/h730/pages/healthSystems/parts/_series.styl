@@ -1,0 +1,66 @@
+.series {
+
+
+	.main-video {
+		height: 475px;
+		width: 673px;
+		.cta {
+			position: absolute;
+	    	// bottom: -7%;
+	    	bottom: -11%;
+	    	transition: all 400ms ease-in-out;
+	    	
+	    	p, p.close, p.open {
+	    		font-size: 2rem;
+	    		line-height: 2.5rem;
+	    	}
+	    	p.close {
+	    		top: 0px;
+	    		.cross {
+	    			// right: -10px;
+	    			top: 5px;
+	    		}
+	    	}
+	    }
+	    
+	    .poster {
+	    	h4 {
+	    		font-size: 2.5rem;
+	    		line-height: 2.9rem;
+	    	}
+	    	
+	    	h5 {
+				padding-top: 0px;
+				font-size: 1.75rem;
+				line-height: 2rem;
+	    	}
+
+	    }
+
+	    &.expanded {
+
+	    	.cta {
+	    		bottom: -10%;
+	    	}
+
+	    }
+
+	}
+	
+	.series-container {
+		h5 {
+			padding-top: 0px;
+		}
+		
+		h6 {
+			// there simply isn't enough space to show the h4,h5.
+			// furthermore this title info is duplicated and shown above when selected.
+			// repetitive info that isn't necessary when we start to loose real estate.
+			display: none;
+		}
+		
+	}
+	
+	
+
+}

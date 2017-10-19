@@ -1,0 +1,38 @@
+
+
+section#faq_intro .section_wrapper {
+    padding-top: 180px;
+}
+
+section#faq_intro h1, body.unsick-faq section#faq_intro p {
+    font-size: 4rem;
+    font-family:sharp-sans-medium;
+    line-height:1.3em;
+}
+
+section#faq_intro h1 {
+    margin-bottom:0.4em;
+}
+
+section#faqs {
+    font-family:sharp-sans-medium;
+}
+
+.faqs {
+    max-width:700px;
+}
+
+.faqs li {
+    margin-bottom:1.65em;
+    font-size:2.25rem;
+    line-height:1.6em;
+}
+
+    .faqs .question span {
+        border-bottom:1px solid rgb(90,106,255);
+    }
+    
+    .faqs .answer {
+        /* derp */
+    }
+    

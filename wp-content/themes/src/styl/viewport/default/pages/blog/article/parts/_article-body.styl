@@ -1,0 +1,222 @@
+.article-body-container {
+
+  min-height 100vh
+  padding 0px 50px
+
+  &[data-color-category='partnership'] {
+    //background-color #00e6af
+    .content-wrapper .text-container {
+      a {
+        &:hover {
+          color #39E4AD
+        }
+      }
+      blockquote p {
+        color #39E4AD
+        border-left 1px solid #39E4AD
+      }
+    }
+  }
+  &[data-color-category='company'] {
+    //background-color #28d7fa
+    .content-wrapper .text-container {
+      a {
+        &:hover {
+          color #44D8FB
+        }
+      }
+      blockquote p {
+        color #44D8FB
+        border-left 1px solid #44D8FB
+      }
+    }
+  }
+  &[data-color-category='patients'] {
+    .content-wrapper .text-container {
+      a {
+        &:hover {
+          color #FCB5C9
+        }
+      }
+      blockquote p {
+        color #FCB5C9
+        border-left 1px solid #FCB5C9
+      }
+    }
+  }
+  &[data-color-category='provider'] {
+    //background-color #ffb4c8
+    .content-wrapper .text-container {
+      a {
+        &:hover {
+          color #F96573
+        }
+      }
+      blockquote p {
+        color #F96573
+      }
+    }
+  }
+  &[data-color-category='tech'] {
+    //background-color #ff6472
+    .content-wrapper .text-container {
+      a {
+        &:hover {
+          color #C191FF
+        }
+      }
+      blockquote p {
+        color #C191FF
+        border-left 1px solid #C191FF
+      }
+    }
+  }
+  &[data-color-category='default'] {
+    //background-color #fe616e
+    .content-wrapper .text-container {
+      a {
+        &:hover {
+          color #FCB5C9
+        }
+      }
+      blockquote p {
+        color #FCB5C9
+        border-left 1px solid #FCB5C9
+      }
+    }
+  }
+
+  .content-wrapper {
+
+    position relative
+    top: 0px;
+    margin 0px auto
+    max-width 1024px
+
+    &.has-thumbnail {
+      top: -240px;
+    }
+
+    .header-image {
+      width 100%
+      height auto
+      background none
+      background-size cover
+      padding-top 50%
+      text-align center
+      position relative
+      overflow hidden
+
+      // img {
+      //   width 100%
+      //   height auto
+      //   position absolute
+      //   left 0
+      //   right 0
+      //   top 0
+      //   bottom 0
+      //   margin 0px auto
+      // }
+    }
+
+    .text-container {
+      padding 100px 0 50px
+
+      h1, h2, h3 {
+        fontsize-24-strong()
+        color gulf-blue
+        max-width 70%
+        margin 0px auto
+        padding-bottom 60px
+        transition 0.2s all ease-out
+        a {
+          fontsize-24-strong()
+        }
+      }
+
+      a {
+        fontsize-18()
+        color gulf-blue
+        transition 0.2s all ease-out
+        &:hover {
+          text-decoration none
+          color pink-rose
+        }
+      }
+
+      strong {
+        fontsize-18-strong()
+        color: gulf-blue
+        padding 20px 0px
+        max-width 70%
+        margin 0px auto
+      }
+
+      img {
+        padding 20px 0
+        margin 0px auto
+        width 100%
+        height auto
+      }
+
+      video, iframe {
+        margin 40px auto
+        display block
+        max-width 100%
+      }
+
+      p {
+        fontsize-18-medium()
+        color dark-grey
+        padding 20px 0px
+        max-width 70%
+        margin 0px auto
+      }
+
+      blockquote {
+
+        padding: 60px 0 60px 20%;
+
+        p {
+          fontsize-28()
+          color pink-rose
+          margin 0px auto
+          padding-left 5%
+          border-left 1px solid pink-rose
+        }
+      }
+
+      ul {
+        max-width 70%
+        margin 0px auto
+        padding 20px 0px
+      }
+    }
+  }
+
+  .button-comments {
+    cursor pointer
+    margin-top 20px
+    position relative
+    padding 20px 20px
+    max-width 70%
+    margin auto
+    background white-lila
+    overflow hidden
+
+    p {
+      width 100%
+      text-align center
+      color gulf-blue
+      fontsize-18-strong()
+      position relative
+    }
+
+    .open {
+      position absolute
+      left 0
+      top 35px
+      opacity 0
+    }
+  }
+}

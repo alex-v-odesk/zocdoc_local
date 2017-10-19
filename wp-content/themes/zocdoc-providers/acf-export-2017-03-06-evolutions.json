@@ -1,0 +1,910 @@
+[
+    {
+        "key": "group_58baf0a9b9d59",
+        "title": "Evolutions",
+        "fields": [
+            {
+                "key": "field_58baf0aa01e4e",
+                "label": "Module",
+                "name": "module",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5876e6f1a1997",
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Module",
+                "sub_fields": [
+                    {
+                        "key": "field_58bca81bc12fa",
+                        "label": "Partner logo",
+                        "name": "partner_logo_img",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Partner Logo"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_58bb67123f708",
+                        "label": "Hero Image",
+                        "name": "hero_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Header"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_58baf0aa22cc3",
+                        "label": "Type",
+                        "name": "type",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Partner Logo": "Partner Logo",
+                            "Nav Button": "Nav Button",
+                            "Header": "Header",
+                            "Text with image": "Text with image",
+                            "Why join": "Why join",
+                            "Icons": "Icons",
+                            "Pricing": "Pricing",
+                            "Video": "Video"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_58baf0aa2309d",
+                        "label": "Menu title",
+                        "name": "menu_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58baf0aa23461",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58bb05aaac5f5",
+                        "label": "nav box hed",
+                        "name": "nav_box_hed",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Header"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58baf0aa24027",
+                        "label": "Text Left hed",
+                        "name": "text_left_hed",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58bb4def4a420",
+                        "label": "Side Nav",
+                        "name": "side_nav",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Header"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": "",
+                        "max": 4,
+                        "layout": "row",
+                        "button_label": "Add link",
+                        "sub_fields": [
+                            {
+                                "key": "field_58bb4e244a422",
+                                "label": "Side Nav Link",
+                                "name": "side_nav_link",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_58baf0aa2442e",
+                        "label": "Text Left paragraph",
+                        "name": "text_left_paragraph",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "visual",
+                        "toolbar": "basic",
+                        "media_upload": 0
+                    },
+                    {
+                        "key": "field_58baf0aa24817",
+                        "label": "Image Right",
+                        "name": "image_right",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_58baf0aa24bfe",
+                        "label": "Text Right hed",
+                        "name": "text_right_hed",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58baf0aa24f71",
+                        "label": "Text Right paragraph",
+                        "name": "text_right_paragraph",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "visual",
+                        "toolbar": "basic",
+                        "media_upload": 0
+                    },
+                    {
+                        "key": "field_58baf0aa253d6",
+                        "label": "Image Left",
+                        "name": "image_left",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_58baf0aa257b8",
+                        "label": "Why join",
+                        "name": "why_join_text",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Why join"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_587864dd8ee69",
+                        "min": 1,
+                        "max": 3,
+                        "layout": "row",
+                        "button_label": "Add Row",
+                        "sub_fields": [
+                            {
+                                "key": "field_58baf0ac32f84",
+                                "label": "Join hed",
+                                "name": "join_hed",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Why join"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_58baf0ac3316d",
+                                "label": "Join dek",
+                                "name": "join_dek",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Why join"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "visual",
+                                "toolbar": "basic",
+                                "media_upload": 0
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_58baf0aa25ba6",
+                        "label": "Why join icons",
+                        "name": "why_join_icons",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Why join"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_5878725cf574b",
+                        "min": 1,
+                        "max": "",
+                        "layout": "row",
+                        "button_label": "Add Row",
+                        "sub_fields": [
+                            {
+                                "key": "field_58baf0acad207",
+                                "label": "Icon hed",
+                                "name": "icon_hed",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Why join"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_58baf0acad5f2",
+                                "label": "Icon",
+                                "name": "icon_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Why join"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_58baf0acad807",
+                                "label": "Icon dek",
+                                "name": "icon_dek",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Why join"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "visual",
+                                "toolbar": "basic",
+                                "media_upload": 0
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_58baf0aa25f22",
+                        "label": "Pricing Benefits",
+                        "name": "pricing_benefits",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Pricing"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 1,
+                        "max": 5,
+                        "layout": "row",
+                        "button_label": "Add Row",
+                        "sub_fields": [
+                            {
+                                "key": "field_58bb8558272dd",
+                                "label": "listed benefit",
+                                "name": "listed_benefit",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Pricing"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_58bca566e241a",
+                                "label": "Check icon",
+                                "name": "check_icon",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_58baf0aa22cc3",
+                                            "operator": "==",
+                                            "value": "Pricing"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_58bb84b7e75e1",
+                        "label": "Annual Fee",
+                        "name": "annual_fee",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Pricing"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "$0,000",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58baf0aa26389",
+                        "label": "Video",
+                        "name": "provider_video",
+                        "type": "oembed",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Video"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "width": "",
+                        "height": ""
+                    },
+                    {
+                        "key": "field_58baf0aa26753",
+                        "label": "Button Text",
+                        "name": "button_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Why join"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Header"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Video"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Header"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Nav Button"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Pricing"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Get Started",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_58baf0aa26b52",
+                        "label": "Button Link",
+                        "name": "button_link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Header"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Text with image"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Why join"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Nav Button"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Pricing"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_58baf0aa22cc3",
+                                    "operator": "==",
+                                    "value": "Icons"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-evolutions.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

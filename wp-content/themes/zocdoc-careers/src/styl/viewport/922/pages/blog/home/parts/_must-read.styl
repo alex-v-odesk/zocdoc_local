@@ -1,0 +1,43 @@
+.must-read-container {
+
+  h2 {
+    fontsize-24-strong()
+  }
+
+  .article-list {
+    margin 50px auto 50px auto
+    max-width initial
+    height auto
+    padding-top 40px
+
+    .article {
+
+      margin-bottom 60px
+
+      &:nth-of-type(2n){
+        margin-top: 0px
+      }
+
+      a {
+
+        .round-mask {
+
+          width 200px
+          height 200px
+        }
+
+        .title {
+          fontsize-18-strong()
+          max-width 90%
+
+        }
+
+        &:hover {
+          .title {
+            color pink-rose
+          }
+        }
+      }
+    }
+  }
+}

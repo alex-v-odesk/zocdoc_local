@@ -1,0 +1,63 @@
+// Story Block
+
+.story {
+
+  h2 {
+    color white
+    text-align center
+    width 100%
+    fontsize-50()
+  }
+
+  p {
+    width 85%
+    padding 20px 0
+    margin 0 auto
+    fontsize-18()
+  }
+
+  .bg-image {
+    z-index 0
+  }
+
+  .story-video-overlay {
+
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    //z-index 5
+
+    .story-video {
+      width 100%
+      min-height 250px
+    }
+
+    .video-container {
+      width 100%
+      //height auto
+
+      .yt-player {
+        margin-top 3%;
+      }
+
+      .custom-video-controls-container {
+        display none
+      }
+    }
+
+    .btn-back {
+      fontsize-14-strong()
+      top 20%
+      right 15%
+    }
+  }
+
+  .mask-wrapper {
+
+    span {
+      bottom -10px
+    }
+  }
+}

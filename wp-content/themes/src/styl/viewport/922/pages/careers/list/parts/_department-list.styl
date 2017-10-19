@@ -1,0 +1,193 @@
+.deparment-side-nav {
+
+  position initial
+  display block
+  background white-lila
+  padding-left 15%
+  padding 15% 15%
+
+  h3 {
+    fontsize-28()
+    color gulf-blue
+  }
+
+  .filter-wrapper {
+    background-color light-grey
+  }
+
+  .department-list {
+
+    li {
+
+      max-width 100%
+
+      a {
+        fontsize-18-strong()
+        color dark-grey
+        &:hover, &.selected, &.current {
+          color dark-grey
+        }
+      }
+    }
+  }
+}
+
+.department-list-container {
+
+  .sticky-header {
+
+    z-index 3
+    overflow hidden
+    position absolute
+    height 170px
+    padding-left: 0;
+    left 0
+    right 0
+
+    .blob-wrapper {
+
+      width 100%
+      height 100%
+
+      h2 {
+        font-size 2.5rem
+        line-height 3rem
+        left 10%
+        top 20px
+        max-width 85%
+
+        span {
+          fontsize-14-strong()
+        }
+
+      }
+
+    }
+
+    .canvas {
+      z-index: -1;
+      position absolute
+      left -10px
+      top -30px
+      width 110%
+      height 100%
+    }
+
+  }
+
+  .team {
+
+    min-height 100vh
+
+    &:first-of-type {
+      .content-wrapper {
+        padding-top: 60px;
+      }
+    }
+
+    .content-wrapper {
+
+      padding-top: 45px;
+
+      .team-header {
+
+        padding-top 0px
+
+        h2 {
+          font-size 2.5rem
+          line-height 3rem
+          max-width 90%
+        }
+        span {
+          z-index 1
+          fontsize-14-strong()
+          padding-top: 10px;
+          display: block;
+        }
+
+      }
+
+      .about-text {
+
+        padding-top 80px
+
+        h3 {
+          fontsize-18-strong()
+          padding-bottom 30px
+          color gulf-blue
+        }
+
+        p {
+          fontsize-18()
+          color dark-grey
+        }
+      }
+
+      .quote {
+
+        padding-top 60px
+        text-align: center;
+        margin 0
+
+        p {
+          fontsize-18-strong()
+          max-width: inherit;
+        }
+
+        .employee-name {
+          fontsize-14-strong()
+        }
+
+        .role {
+          fontsize-14()
+        }
+
+        img {
+          margin 20px auto
+        }
+
+      }
+
+      .job-openings-container {
+
+        margin 60px 0
+
+        ul {
+          border-top 1px solid light-grey
+
+          li {
+            height 70px
+            position relative
+
+            fontsize-15-strong()
+            color gulf-blue
+
+            a {
+              fontsize-15-strong()
+              width 100%
+              padding-right 90px
+            }
+
+            span {
+              fontsize-14-strong()
+              position absolute
+              right 0
+            }
+
+            .learn-more {
+              display: none;
+            }
+
+            &:hover {
+              .learn-more {
+                display: none;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}

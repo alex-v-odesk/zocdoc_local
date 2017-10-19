@@ -1,0 +1,132 @@
+.carousel {
+
+  background-color black
+
+  .carousel-items-container {
+    position relative
+    overflow hidden
+    width 100%
+    -webkit-transform translateZ(0)
+    transform translateZ(0)
+    -webkit-backface-visibility hidden
+    backface-visibility hidden
+  }
+
+  .carousel-items {
+    position relative
+    width 100%
+    display block
+    height 100vh
+    top 0
+    left 0
+  }
+
+  .carousel-item {
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    visibility hidden
+    opacity 0
+
+    transition 0.6s all linear
+
+    &.active {
+      visibility visible
+      opacity 1
+    }
+
+    .text-container {
+      position absolute
+      bottom 65px
+      left 0
+      z-index 10
+      width 100%
+
+      .icon {
+        margin 0px auto 15px auto
+        opacity 1
+        max-width 60px
+        height auto
+        display: block;
+      }
+
+      p {
+        text-align center
+        color white
+        width 100%
+        fontsize-18()
+
+        strong {
+          fontsize-18-strong()
+        }
+      }
+    }
+
+    .layer {
+      position absolute
+      height 100%
+      width 100%
+      background rgba(0, 0, 0, .4)
+      z-index 5
+    }
+
+    .image-container {
+      display block
+      position relative
+      top 0
+      left 0
+      width 100%
+      height 100%
+      z-index 2
+    }
+
+  }
+
+  .carousel-indicators-container {
+    position absolute
+    bottom 30px
+    height 20px
+    left 0
+    right 0
+    z-index 6
+  }
+
+  .carousel-indicators {
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    height 100%
+
+    li {
+
+      background-color #e7e6ec
+      border-radius 100%
+      width 7px
+      height 7px
+      cursor pointer
+      color white
+      margin 7px
+      position relative
+      z-index 2
+
+      &.selector {
+        background-color zocdoc-yellow
+        position absolute
+        width 10px
+        height 10px
+        display none
+      }
+
+      &.active {
+        background-color zocdoc-yellow
+        width 9px
+        height 9px
+        position relative
+      }
+
+    }
+  }
+}

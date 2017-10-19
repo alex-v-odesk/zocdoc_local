@@ -1,0 +1,94 @@
+// Perks Block
+
+.perks {
+  min-height 100vh
+  height auto
+  z-index 25
+  position relative
+
+  &.hidden {
+    visibility hidden
+    opacity 0
+  }
+
+  h2 {
+    padding 15vh 0 1vh
+    fontsize-50()
+    position relative
+  }
+
+  h3 {
+    fontsize-24-strong()
+    padding 0 0 30px
+    position relative
+  }
+
+  h2, h3 {
+    color gulf-blue
+    text-align center
+    width 100%
+  }
+
+  .perks-content {
+    width 1000px
+    margin 0 auto
+    padding-bottom: 15vh;
+  }
+
+  .perk-block {
+    margin 25px 40px 0px 40px
+    display inline-block
+    width 250px
+    height 275px
+    position relative
+
+    .img {
+      padding 40px 0 15px
+      text-align center
+      width 100%
+
+      img {
+        width auto
+        max-height 220px
+        min-width 115px
+      }
+    }
+
+    .text {
+      left -15%
+      width 130%
+      position relative
+      text-align center
+      fontsize-20()
+      color waterloo
+      margin 0 auto
+    }
+
+    &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+      // top 70px
+      top 40px
+    }
+
+    &:nth-child(3) {
+      // top 20px
+      top 0px
+    }
+
+    &:nth-child(5) {
+      img {
+        max-width: 130px;
+      }
+    }
+
+    &:nth-child(6) {
+      .img {
+
+        // img {
+        //   min-width 220px
+        // }
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+/* background color */
+.st0{
+  fill:#C382FF;
+}
+.hair {
+fill: #00234B;
+}
+/* rash color */
+.st1{
+  fill:#FF6473;
+}
+/* the face color */
+.st2{
+  fill:#DCA583;
+}
+/* z color */
+.st3{
+  fill:#12254A;
+}
+.st4{
+  fill:#00234B;
+}
+/* shirt color */
+.st5{
+  fill:#C9F5FE;
+}
+/* shirt stripe color */
+.st6{
+  fill:#F3F3F4;
+}
+/* other */
+.st7{
+  display:none;
+}
+.st8{
+  display:inline;
+  fill:#FF6473;
+}
