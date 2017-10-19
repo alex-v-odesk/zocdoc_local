@@ -19,7 +19,7 @@ var App = function (){
  */
 App.prototype.init = function(){
 
-  console.log('**** Begin App ****');
+  console.log('**** Begin App TEST ****');
   Config.init();
   Router.init();
 

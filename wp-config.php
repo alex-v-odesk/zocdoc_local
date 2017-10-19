@@ -1,10 +1,10 @@
 <?php
 # Database Configuration
-define( 'DB_NAME', 'wp_zocdocstatic' );
-define( 'DB_USER', 'zocdocstatic' );
-define( 'DB_PASSWORD', 'KMO3aTXWNyCz8LYT0Rh3' );
-define( 'DB_HOST', '127.0.0.1' );
-define( 'DB_HOST_SLAVE', '127.0.0.1' );
+define( 'DB_NAME', 'zd-enh.local' );
+define( 'DB_USER', 'zocdoc_local' );
+define( 'DB_PASSWORD', 'zocdoc_local' );
+define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST_SLAVE', 'localhost' );
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', 'utf8_unicode_ci');
 $table_prefix = 'wp_';
@@ -110,7 +110,7 @@ $memcached_servers=array ( );
 
 
 #define( 'WP_SITEURL', 'http://www.zocdoc.com' );
-define( 'WP_SITEURL', 'http://zocdocstatic.wpengine.com' );
+// define( 'WP_SITEURL', 'http://zocdocstatic.wpengine.com' );
 
 // define( 'WP_HOME', 'http://zocdocstatic.wpengine.com' );
 define('WPLANG','');

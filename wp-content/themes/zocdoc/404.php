@@ -1,1 +1,1 @@
-<?php header('Location: https://zocdoc.com/404'); ?>
+<?php //header('Location: https://zocdoc.com/404'); ?>
