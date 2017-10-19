@@ -174,10 +174,21 @@ add_action('wp_enqueue_scripts', 'deregister_unwanted_scripts');
 function enqueue_custom_style()
 {
 
+    if (
+            preg_match("/zd-enh.local/i", $_SERVER['HTTP_HOST']) 
+            || preg_match("/dev.zocdoc.sdny.in/i", $_SERVER['HTTP_HOST'])
+            // || preg_match("/zocdocstatic.staging.wpengine.com/i", $_SERVER['HTTP_HOST'])
+// ^ uncomment if you want to test code on staging, as there is no formal Dev server - @eric_wvgg 4-2017
+        ) {
+          $css = '/css/app.css';
+        }else{
+          $css = '/css/app.min.css';
+        }
+
     // wp_register_style() example
     wp_register_style(
         'app-style', // handle name
-        get_template_directory_uri() . '/css/app.css', // the URL of the stylesheet
+        get_template_directory_uri() . $css, // the URL of the stylesheet
         null, // an array of dependent styles
         null, // version number
         'screen' // CSS media type
