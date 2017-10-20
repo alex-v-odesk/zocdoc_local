@@ -5786,6 +5786,26 @@ html:hover [class^="ss-"] {
 #article .article-body-container .content-wrapper .text-container {
   padding: 100px 0 50px;
 }
+#article .article-body-container .content-wrapper .text-container .social_shares {
+  float: right;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  width: 300px;
+}
+#article .article-body-container .content-wrapper .text-container .social_shares ul li {
+  line-height: 2em;
+  font-family: "sharp-sans-medium", Arial, sans-serif !important;
+}
+#article .article-body-container .content-wrapper .text-container .social_shares ul li a {
+  text-decoration: none !important;
+}
+#article .article-body-container .content-wrapper .text-container .social_shares ul li:first-of-type {
+  font-family: "sharp-sans-bold", Arial, sans-serif !important;
+  color: #05215a;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: sharp-sans-bold;
+}
 #article .article-body-container .content-wrapper .text-container h1,
 #article .article-body-container .content-wrapper .text-container h2,
 #article .article-body-container .content-wrapper .text-container h3 {
