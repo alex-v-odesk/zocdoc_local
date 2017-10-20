@@ -64,6 +64,9 @@ ga('send', 'pageview');
 
 </script>
 
+<!-- NEWSCRED -->
+<script async src="//analytics.newscred.com/analytics_ba0d155b6f6941e7a1c123e84deab985.js"></script>
+
     <!-- Rockerbox - Place on all pages -->
 <script type="text/javascript">
 (function(d,RB) {if (!window.RB) { window.RB=RB;RB.queue=[];RB.track=RB.track||function(){RB.queue.push(Array.prototype.slice.call(arguments))};RB.initialize=function(s){RB.source=s};var a = d.createElement("script");  a.type="text/javascript"; a.async=!0; a.src="https://getrockerbox.com/assets/xyz.js"; f=d.getElementsByTagName("script")[0]; f.parentNode.insertBefore(a,f);} } )(document,window.RB || {});

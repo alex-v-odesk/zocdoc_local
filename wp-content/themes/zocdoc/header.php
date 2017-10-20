@@ -37,6 +37,9 @@
         ga('create', 'UA-2809147-1', 'auto');
         ga('send', 'pageview');
     </script>
+    
+<!-- NEWSCRED -->
+<script async src="//analytics.newscred.com/analytics_ba0d155b6f6941e7a1c123e84deab985.js"></script>
 
     <!-- Rockerbox - Place on all pages -->
 <script type="text/javascript">
