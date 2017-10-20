@@ -5799,6 +5799,9 @@ html:hover [class^="ss-"] {
   text-decoration: none !important;
   font-family: "sharp-sans-medium", Arial, sans-serif !important;
 }
+#article .article-body-container .content-wrapper .text-container .social_shares ul li a:hover {
+  color: #e9b6c7 !important;
+}
 #article .article-body-container .content-wrapper .text-container .social_shares ul li a span {
   font-size: 0.8em;
 }
@@ -5838,7 +5841,7 @@ html:hover [class^="ss-"] {
 }
 #article .article-body-container .content-wrapper .text-container a:hover {
   text-decoration: none;
-  color: #fe616e;
+  color: #42d6f8 !important;
 }
 #article .article-body-container .content-wrapper .text-container strong {
   font-size: 1.8rem;
