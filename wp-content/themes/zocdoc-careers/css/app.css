@@ -5865,7 +5865,8 @@ html:hover [class^="ss-"] {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: 'sharp-sans-medium', Arial, sans-serif;
-  color: #48484d;
+  color: #05215a;
+  font-family: "kievit-slab-pro-book", Georgia, serif !important;
   padding: 20px 0px;
   max-width: 70%;
   margin: 0px auto;
