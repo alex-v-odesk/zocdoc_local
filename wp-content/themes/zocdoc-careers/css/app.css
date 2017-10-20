@@ -5863,6 +5863,9 @@ html:hover [class^="ss-"] {
   margin: 0px auto;
   padding: 20px 0px;
 }
+#article .article-body-container .nc_pixel {
+  width: 0px !important;
+}
 #article .article-body-container .button-comments {
   cursor: pointer;
   margin-top: 20px;
@@ -9534,6 +9537,4 @@ html:hover [class^="ss-"] {
     margin-left: 50px;
   }
 }
-
-
 /*# sourceMappingURL=app.css.map */
