@@ -1050,6 +1050,40 @@ html:hover [class^="ss-"] {
   background: #fff04b;
   position: absolute;
 }
+.page-header .search-form {
+  margin: 0;
+  padding: 0;
+  transform: translateY(-100%);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 350px;
+  background-color: #fff;
+  z-index: 0;
+}
+.page-header .search-form .form-container {
+  display: block;
+}
+.page-header .search-form .form-container h2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: sharp-sans-bold;
+  color: #d5d5d9;
+  display: block;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.page-header .search-form .form-container form input {
+  text-align: center;
+  outline: 0;
+  color: #05215a;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-family: sharp-sans-bold;
+  border: none;
+  width: 100%;
+  height: 80px;
+}
 #page-footer {
   position: relative;
   z-index: 20;
