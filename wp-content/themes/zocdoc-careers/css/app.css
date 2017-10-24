@@ -5875,7 +5875,7 @@ html:hover [class^="ss-"] {
 }
 #article .article-body-container .content-wrapper .text-container a:hover {
   text-decoration: none;
-  color: #42d6f8 !important;
+  color: #fe616e;
 }
 #article .article-body-container .content-wrapper .text-container strong {
   font-size: 1.8rem;
