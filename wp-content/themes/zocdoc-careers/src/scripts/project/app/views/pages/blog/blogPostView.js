@@ -180,15 +180,15 @@ BlogPostView.prototype.onUpdate = function () {
 }
 
 BlogPostView.prototype.managerSearchField = function () {
-
+// ON FIRST CLICK
   if (!this.searchIsVisible) {
-
+    
     $(this.$header).addClass('border');
     TweenMax.to(this.$searchContent, .9, {y: '0%', ease: Expo.easeOut});
 
   }
   else {
-
+    // ON SECOND CLICK TO CLOSE
     $(this.$header).removeClass('border');
     TweenMax.to(this.$searchContent, 1, {y: '-100%', ease: Expo.easeOut});
 
