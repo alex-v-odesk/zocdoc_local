@@ -5892,6 +5892,10 @@ html:hover [class^="ss-"] {
   width: 100%;
   height: auto;
 }
+#article .article-body-container .content-wrapper .text-container [id^="attachment"] {
+  width: 50% !important;
+  margin: auto;
+}
 #article .article-body-container .content-wrapper .text-container video,
 #article .article-body-container .content-wrapper .text-container iframe {
   margin: 40px auto;
@@ -5907,6 +5911,14 @@ html:hover [class^="ss-"] {
   padding: 20px 0px;
   max-width: 70%;
   margin: 0px auto;
+}
+#article .article-body-container .content-wrapper .text-container p.wp-caption-text {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-family: 'kievit-slab-pro-book', Arial, sans-serif;
+  padding: 0px;
+  text-align: center;
+  font-style: italic;
 }
 #article .article-body-container .content-wrapper .text-container blockquote {
   padding: 60px 0 60px 20%;

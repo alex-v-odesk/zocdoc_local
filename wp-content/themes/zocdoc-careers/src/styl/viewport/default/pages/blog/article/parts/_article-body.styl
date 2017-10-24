@@ -176,6 +176,12 @@
         width 100%
         height auto
       }
+      
+      [id^="attachment"] {
+        // border 1px red solid
+        width 50%!important
+        margin auto
+      }
 
       video, iframe {
         margin 40px auto
@@ -190,6 +196,12 @@
         padding 20px 0px
         max-width 70%
         margin 0px auto
+        &.wp-caption-text {
+          fontsize-15()
+          padding 0px;
+          text-align center;
+          font-style italic;
+        }
       }
 
       blockquote {
@@ -216,6 +228,10 @@
         line-height 2.4rem
         list-style decimal
       }
+      
+      // p.wp-caption-text {
+      //   border: 1px red solid!important;
+      // }
 
     } //.text-container 
     
