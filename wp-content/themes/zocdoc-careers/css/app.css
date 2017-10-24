@@ -5920,10 +5920,20 @@ html:hover [class^="ss-"] {
   padding-left: 5%;
   border-left: 1px solid #fe616e;
 }
-#article .article-body-container .content-wrapper .text-container ul {
+#article .article-body-container .content-wrapper .text-container ul,
+#article .article-body-container .content-wrapper .text-container ol {
   max-width: 70%;
   margin: 0px auto;
   padding: 20px 0px;
+  color: #05215a;
+  font-family: "kievit-slab-pro-book", Georgia, serif !important;
+}
+#article .article-body-container .content-wrapper .text-container ol li {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-family: 'kievit-slab-pro-book', Arial, sans-serif;
+  line-height: 2.4rem;
+  list-style: decimal;
 }
 #article .article-body-container .nc_pixel {
   width: 0px !important;
