@@ -5896,6 +5896,7 @@ html:hover [class^="ss-"] {
   width: 50% !important;
   margin: auto;
 }
+#article .article-body-container .content-wrapper .text-container center border,
 #article .article-body-container .content-wrapper .text-container video,
 #article .article-body-container .content-wrapper .text-container iframe {
   margin: 40px auto;
