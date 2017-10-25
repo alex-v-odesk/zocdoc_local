@@ -8989,6 +8989,9 @@ html:hover [class^="ss-"] {
   #article .article-body-container .content-wrapper .text-container {
     padding-top: 40px;
   }
+  #article .article-body-container .content-wrapper .text-container .social_shares {
+    width: 200px;
+  }
   #article .article-body-container .content-wrapper .text-container h1 a,
   #article .article-body-container .content-wrapper .text-container h2 a,
   #article .article-body-container .content-wrapper .text-container h3 a {
