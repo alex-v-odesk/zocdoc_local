@@ -8992,6 +8992,11 @@ html:hover [class^="ss-"] {
   #article .article-body-container .content-wrapper .text-container .social_shares {
     width: 200px;
   }
+  #article .article-body-container .content-wrapper .text-container h1,
+  #article .article-body-container .content-wrapper .text-container h2,
+  #article .article-body-container .content-wrapper .text-container h3 {
+    max-width: 100%;
+  }
   #article .article-body-container .content-wrapper .text-container h1 a,
   #article .article-body-container .content-wrapper .text-container h2 a,
   #article .article-body-container .content-wrapper .text-container h3 a {
@@ -9014,9 +9019,9 @@ html:hover [class^="ss-"] {
     max-width: 100%;
   }
   #article .article-body-container .content-wrapper .text-container a {
+    ont-family: 'kievit-slab-pro-book';
     font-size: 1.8rem;
     line-height: 2.3rem;
-    font-family: 'sharp-sans-medium', Arial, sans-serif;
   }
   #article .article-body-container .content-wrapper .text-container strong {
     font-size: 1.6rem;
@@ -9027,6 +9032,9 @@ html:hover [class^="ss-"] {
     font-size: 1.8rem;
     line-height: 2.5rem;
     font-family: sharp-sans-bold;
+  }
+  #article .article-body-container .content-wrapper .text-container blockquote .blockquote_share {
+    border-left: 0px;
   }
   #article .comments {
     max-width: 100%;
