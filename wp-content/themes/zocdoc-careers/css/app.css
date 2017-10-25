@@ -5896,7 +5896,6 @@ html:hover [class^="ss-"] {
   width: 50% !important;
   margin: auto;
 }
-#article .article-body-container .content-wrapper .text-container center border,
 #article .article-body-container .content-wrapper .text-container video,
 #article .article-body-container .content-wrapper .text-container iframe {
   margin: 40px auto;
@@ -5918,7 +5917,8 @@ html:hover [class^="ss-"] {
   line-height: 2.1rem;
   font-family: 'kievit-slab-pro-book', Arial, sans-serif;
   padding: 0px;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 5%;
   font-style: italic;
 }
 #article .article-body-container .content-wrapper .text-container blockquote {
