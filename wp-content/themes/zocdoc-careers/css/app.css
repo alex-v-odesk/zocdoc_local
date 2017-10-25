@@ -5827,6 +5827,7 @@ html:hover [class^="ss-"] {
   width: 300px;
 }
 #article .article-body-container .content-wrapper .text-container .social_shares ul li {
+  list-style: none;
   line-height: 2.4em;
 }
 #article .article-body-container .content-wrapper .text-container .social_shares ul li a {
@@ -5940,6 +5941,7 @@ html:hover [class^="ss-"] {
   padding: 20px 0px;
   color: #05215a;
   font-family: "kievit-slab-pro-book", Georgia, serif !important;
+  margin-left: 20%;
 }
 #article .article-body-container .content-wrapper .text-container ol li {
   font-size: 1.8rem;
@@ -5947,6 +5949,10 @@ html:hover [class^="ss-"] {
   font-family: 'kievit-slab-pro-book', Arial, sans-serif;
   line-height: 2.4rem;
   list-style: decimal;
+}
+#article .article-body-container .content-wrapper .text-container ul li {
+  list-style: initial;
+  font-size: 1.8rem;
 }
 #article .article-body-container .nc_pixel {
   width: 0px !important;
