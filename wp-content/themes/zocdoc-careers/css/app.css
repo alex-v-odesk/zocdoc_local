@@ -9019,9 +9019,9 @@ html:hover [class^="ss-"] {
     max-width: 100%;
   }
   #article .article-body-container .content-wrapper .text-container a {
+    ont-family: 'kievit-slab-pro-book';
     font-size: 1.8rem;
     line-height: 2.3rem;
-    font-family: 'sharp-sans-medium', Arial, sans-serif;
   }
   #article .article-body-container .content-wrapper .text-container strong {
     font-size: 1.6rem;
