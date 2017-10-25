@@ -9042,6 +9042,10 @@ html:hover [class^="ss-"] {
   #article .article-body-container .content-wrapper .text-container blockquote .blockquote_share {
     border-left: 0px;
   }
+  #article .article-body-container .content-wrapper .text-container ol,
+  #article .article-body-container .content-wrapper .text-container ul {
+    margin-left: 10%;
+  }
   #article .comments {
     max-width: 100%;
   }
