@@ -177,7 +177,7 @@ function enqueue_custom_style()
     if (
             preg_match("/zd-enh.local/i", $_SERVER['HTTP_HOST']) 
             || preg_match("/dev.zocdoc.sdny.in/i", $_SERVER['HTTP_HOST'])
-            // || preg_match("/zocdocstatic.staging.wpengine.com/i", $_SERVER['HTTP_HOST'])
+             // || preg_match("/zocdocstatic.staging.wpengine.com/i", $_SERVER['HTTP_HOST'])
 // ^ uncomment if you want to test code on staging, as there is no formal Dev server - @eric_wvgg 4-2017
         ) {
           $css = '/css/app.css';
