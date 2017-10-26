@@ -2617,6 +2617,7 @@ html:hover [class^="ss-"] {
   text-decoration: none;
   transition: 0.2s color ease-out;
   cursor: pointer;
+  text-align: left;
 }
 #careers-list .deparment-side-nav .department-list li button:hover,
 #careers-list .deparment-side-nav .department-list li button.selected,
