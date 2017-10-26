@@ -5826,26 +5826,27 @@ html:hover [class^="ss-"] {
   padding-bottom: 10px;
   width: 300px;
 }
-#article .article-body-container .content-wrapper .text-container .social_shares ul li {
-  line-height: 2.4em;
+#article .article-body-container .content-wrapper .text-container .social_shares li {
+  list-style: none;
+  line-height: 2em !important;
 }
-#article .article-body-container .content-wrapper .text-container .social_shares ul li a {
+#article .article-body-container .content-wrapper .text-container .social_shares li a {
   text-decoration: none !important;
   font-family: "sharp-sans-medium", Arial, sans-serif !important;
 }
-#article .article-body-container .content-wrapper .text-container .social_shares ul li a:hover {
+#article .article-body-container .content-wrapper .text-container .social_shares li a:hover {
   color: #e9b6c7 !important;
 }
-#article .article-body-container .content-wrapper .text-container .social_shares ul li a span {
+#article .article-body-container .content-wrapper .text-container .social_shares li a span {
   font-size: 0.8em;
 }
-#article .article-body-container .content-wrapper .text-container .social_shares ul li:first-of-type {
+#article .article-body-container .content-wrapper .text-container .social_shares li:first-of-type {
   font-family: "sharp-sans-bold", Arial, sans-serif !important;
   color: #05215a;
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: sharp-sans-bold;
-  line-height: 2.4em;
+  line-height: 2.4em !important;
 }
 #article .article-body-container .content-wrapper .text-container h1,
 #article .article-body-container .content-wrapper .text-container h2,
@@ -5941,13 +5942,18 @@ html:hover [class^="ss-"] {
   padding: 20px 0px;
   color: #05215a;
   font-family: "kievit-slab-pro-book", Georgia, serif !important;
+  margin-left: 20%;
+}
+#article .article-body-container .content-wrapper .text-container ul li,
+#article .article-body-container .content-wrapper .text-container ol li {
+  line-height: 2.4rem;
+  font-size: 1.8rem;
 }
 #article .article-body-container .content-wrapper .text-container ol li {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  font-family: 'kievit-slab-pro-book', Arial, sans-serif;
-  line-height: 2.4rem;
   list-style: decimal;
+}
+#article .article-body-container .content-wrapper .text-container ul li {
+  list-style: initial;
 }
 #article .article-body-container .nc_pixel {
   width: 0px !important;
@@ -9036,6 +9042,10 @@ html:hover [class^="ss-"] {
   }
   #article .article-body-container .content-wrapper .text-container blockquote .blockquote_share {
     border-left: 0px;
+  }
+  #article .article-body-container .content-wrapper .text-container ol,
+  #article .article-body-container .content-wrapper .text-container ul {
+    margin-left: 10%;
   }
   #article .comments {
     max-width: 100%;
