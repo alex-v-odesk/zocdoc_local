@@ -6002,6 +6002,10 @@ html:hover [class^="ss-"] {
 #article .comments .commentlist {
   opacity: 0;
 }
+#article .comments .commentlist .pingback,
+#article .comments .commentlist .trackback {
+  display: none;
+}
 #article .comments .commentlist .comment {
   margin: 60px auto;
 }
