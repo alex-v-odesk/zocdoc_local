@@ -28,7 +28,8 @@ if (have_posts()) {
 
 
 //Set default related Posts
-if (!isset($related)) {
+// if (!isset($related)) {
+    if (!$related) {
     $args = array(
         'category' => $category->term_id,
         'post_status' => 'publish',
