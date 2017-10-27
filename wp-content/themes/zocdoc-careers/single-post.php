@@ -28,12 +28,14 @@ if (have_posts()) {
 
 
 //Set default related Posts
-if (!isset($related)) {
+
+    if (!$related) {
     $args = array(
         'category' => $category->term_id,
         'post_status' => 'publish',
         'post_type' => 'post',
-        'numberposts' => 2
+        'numberposts' => 2,
+        'post__not_in' => array($id)
     );
     $related = get_posts($args);
 }
