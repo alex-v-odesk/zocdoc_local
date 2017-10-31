@@ -115,6 +115,9 @@ $memcached_servers=array ( );
 // define( 'WP_HOME', 'http://zocdocstatic.wpengine.com' );
 define('WPLANG','');
 
+// define('WP_DEBUG', true);
+
+
 # WP Engine ID
 
 
