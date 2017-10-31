@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?>
 
 <section id="404" class="page-wrapper">
 	
@@ -6,4 +6,6 @@
 
 </section>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> -->
+
+<?php header('Location: https://zocdoc.com/404'); ?>
