@@ -171,9 +171,7 @@ function deregister_unwanted_scripts()
 add_action('wp_enqueue_scripts', 'deregister_unwanted_scripts');
 
 // load css into the website's front-end
-function enqueue_custom_style()
-{
-
+function enqueue_custom_style() {
     if (
             preg_match("/zd-enh.local/i", $_SERVER['HTTP_HOST']) 
             || preg_match("/dev.zocdoc.sdny.in/i", $_SERVER['HTTP_HOST'])
@@ -184,18 +182,17 @@ function enqueue_custom_style()
         }else{
           $css = '/css/app.min.css';
         }
-
     // wp_register_style() example
     wp_register_style(
         'app-style', // handle name
-        get_template_directory_uri() . $css, // the URL of the stylesheet
+        // get_template_directory_uri() . $css, // the URL of the stylesheet
+        get_stylesheet_directory_uri() . $css,
         null, // an array of dependent styles
         null, // version number
         'screen' // CSS media type
     );
 
     wp_enqueue_style('app-style');
-
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_style');
