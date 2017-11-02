@@ -5917,7 +5917,7 @@ html:hover [class^="ss-"] {
   font-family: 'sharp-sans-medium', Arial, sans-serif;
   color: #05215a;
   font-family: "kievit-slab-pro-book", Georgia, serif !important;
-  padding: 20px 0px;
+  padding: 1.5% 0 !important;
   max-width: 70%;
   margin: 0px auto;
 }
