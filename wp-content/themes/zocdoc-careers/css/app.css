@@ -5859,7 +5859,7 @@ html:hover [class^="ss-"] {
   color: #05215a;
   max-width: 70%;
   margin: 0px auto;
-  padding-bottom: 60px;
+  padding: 3% 0 !important;
   transition: 0.2s all ease-out;
 }
 #article .article-body-container .content-wrapper .text-container h1 a,
