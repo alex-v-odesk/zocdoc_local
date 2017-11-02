@@ -5852,9 +5852,6 @@ html:hover [class^="ss-"] {
 #article .article-body-container .content-wrapper .text-container h1,
 #article .article-body-container .content-wrapper .text-container h2,
 #article .article-body-container .content-wrapper .text-container h3 {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  font-family: sharp-sans-bold;
   line-height: 2.6rem !important;
   color: #05215a;
   max-width: 70%;
@@ -5868,6 +5865,16 @@ html:hover [class^="ss-"] {
   font-size: 2.4rem;
   line-height: 3.2rem;
   font-family: sharp-sans-bold;
+}
+#article .article-body-container .content-wrapper .text-container h1 {
+  font-size: 3.5rem;
+}
+#article .article-body-container .content-wrapper .text-container h2 {
+  font-size: 2.5rem;
+}
+#article .article-body-container .content-wrapper .text-container h3 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 #article .article-body-container .content-wrapper .text-container a {
   font-size: 1.8rem;
