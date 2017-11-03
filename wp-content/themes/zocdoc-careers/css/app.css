@@ -5411,22 +5411,22 @@ html:hover [class^="ss-"] {
   padding: 0px 50px;
 }
 #blog-topic .blog-post-container[data-color-category='partnership'] .content-wrapper .grid .post a:hover .text-wrapper .title {
-  color: #39e4ad;
+  color: #f96573;
 }
 #blog-topic .blog-post-container[data-color-category='company'] .content-wrapper .grid .post a:hover .text-wrapper .title {
-  color: #44d8fb;
+  color: #f96573;
 }
 #blog-topic .blog-post-container[data-color-category='patients'] .content-wrapper .grid .post a:hover .text-wrapper .title {
-  color: #fcb5c9;
+  color: #f96573;
 }
 #blog-topic .blog-post-container[data-color-category='provider'] .content-wrapper .grid .post a:hover .text-wrapper .title {
   color: #f96573;
 }
 #blog-topic .blog-post-container[data-color-category='tech'] .content-wrapper .grid .post a:hover .text-wrapper .title {
-  color: #c191ff;
+  color: #f96573;
 }
 #blog-topic .blog-post-container[data-color-category='default'] .content-wrapper .grid .post a:hover .text-wrapper .title {
-  color: #fcb5c9;
+  color: #f96573;
 }
 #blog-topic .blog-post-container .content-wrapper {
   margin: 0px auto;
