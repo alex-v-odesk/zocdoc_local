@@ -5792,6 +5792,9 @@ html:hover [class^="ss-"] {
   color: #c191ff;
   border-left: 1px solid #c191ff;
 }
+#article .article-body-container[data-color-category='default'] .content-wrapper .text-container a {
+  font-weight: bold;
+}
 #article .article-body-container[data-color-category='default'] .content-wrapper .text-container blockquote p {
   color: #fcb5c9;
   border-left: 1px solid #fcb5c9;
