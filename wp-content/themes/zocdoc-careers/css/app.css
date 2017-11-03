@@ -6125,23 +6125,8 @@ html:hover [class^="ss-"] {
 #article .must-read-container.has-thumbnail {
   margin-top: -90px;
 }
-#article .must-read-container[data-color-category='partnership'] .article-list .article a:hover .title {
-  color: #39e4ad;
-}
-#article .must-read-container[data-color-category='company'] .article-list .article a:hover .title {
-  color: #44d8fb;
-}
-#article .must-read-container[data-color-category='patients'] .article-list .article a:hover .title {
-  color: #fcb5c9;
-}
-#article .must-read-container[data-color-category='provider'] .article-list .article a:hover .title {
-  color: #f96573;
-}
-#article .must-read-container[data-color-category='tech'] .article-list .article a:hover .title {
-  color: #c191ff;
-}
 #article .must-read-container[data-color-category='default'] .article-list .article a:hover .title {
-  color: #fcb5c9;
+  color: #f96573;
 }
 #article .must-read-container .arc {
   background: #f1f1f9;
