@@ -5559,9 +5559,6 @@ html:hover [class^="ss-"] {
   opacity: 1;
   transition: 0.2s opacity Linear;
 }
-#article .info span.category:hover {
-  opacity: 0.7;
-}
 #article .explore-more {
   outline: none;
   display: block;
