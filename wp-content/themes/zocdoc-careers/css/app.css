@@ -5758,35 +5758,20 @@ html:hover [class^="ss-"] {
   min-height: 100vh;
   padding: 0px 50px;
 }
-#article .article-body-container[data-color-category='partnership'] .content-wrapper .text-container a:hover {
-  color: #39e4ad;
-}
 #article .article-body-container[data-color-category='partnership'] .content-wrapper .text-container blockquote p {
   color: #39e4ad;
   border-left: 1px solid #39e4ad;
-}
-#article .article-body-container[data-color-category='company'] .content-wrapper .text-container a:hover {
-  color: #44d8fb;
 }
 #article .article-body-container[data-color-category='company'] .content-wrapper .text-container blockquote p {
   color: #44d8fb;
   border-left: 1px solid #44d8fb;
 }
-#article .article-body-container[data-color-category='patients'] .content-wrapper .text-container a:hover {
-  color: #fcb5c9;
-}
 #article .article-body-container[data-color-category='patients'] .content-wrapper .text-container blockquote p {
   color: #fcb5c9;
   border-left: 1px solid #fcb5c9;
 }
-#article .article-body-container[data-color-category='provider'] .content-wrapper .text-container a:hover {
-  color: #f96573;
-}
 #article .article-body-container[data-color-category='provider'] .content-wrapper .text-container blockquote p {
   color: #f96573;
-}
-#article .article-body-container[data-color-category='tech'] .content-wrapper .text-container a:hover {
-  color: #c191ff;
 }
 #article .article-body-container[data-color-category='tech'] .content-wrapper .text-container blockquote p {
   color: #c191ff;
