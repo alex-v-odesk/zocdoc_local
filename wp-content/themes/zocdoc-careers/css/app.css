@@ -5917,7 +5917,7 @@ html:hover [class^="ss-"] {
   font-family: 'sharp-sans-medium', Arial, sans-serif;
   color: #05215a;
   font-family: "kievit-slab-pro-book", Georgia, serif !important;
-  padding: 1.5% 0 !important;
+  padding: 1.5% 0;
   max-width: 70%;
   margin: 0px auto;
 }
@@ -9027,7 +9027,7 @@ html:hover [class^="ss-"] {
     line-height: 3rem;
     font-family: sharp-sans-bold;
     max-width: 100%;
-    padding-bottom: 30px;
+    padding-top: 10%;
   }
   #article .article-body-container .content-wrapper .text-container p {
     font-size: 1.8rem;
