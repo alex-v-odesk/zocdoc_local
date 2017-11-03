@@ -5868,6 +5868,7 @@ html:hover [class^="ss-"] {
   font-size: 2.4rem;
   line-height: 3.2rem;
   font-family: sharp-sans-bold;
+  text-decoration: none;
 }
 #article .article-body-container .content-wrapper .text-container h2 {
   font-size: 2.7rem;
@@ -5879,8 +5880,9 @@ html:hover [class^="ss-"] {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-family: 'kievit-slab-pro-book', Arial, sans-serif;
-  color: #05215a;
+  color: #f00;
   transition: 0.2s all ease-out;
+  text-decoration: none;
 }
 #article .article-body-container .content-wrapper .text-container a:hover {
   text-decoration: none;
