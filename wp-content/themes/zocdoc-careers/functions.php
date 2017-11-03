@@ -186,7 +186,7 @@ function enqueue_custom_style() {
     wp_register_style(
         'app-style', // handle name
         // get_template_directory_uri() . $css, // the URL of the stylesheet
-        get_stylesheet_directory_uri() . $css,
+        get_stylesheet_directory_uri() . $css, // correct URL of the stylesheet
         null, // an array of dependent styles
         null, // version number
         'screen' // CSS media type
