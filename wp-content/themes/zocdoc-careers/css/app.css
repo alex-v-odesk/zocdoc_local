@@ -5792,9 +5792,6 @@ html:hover [class^="ss-"] {
   color: #c191ff;
   border-left: 1px solid #c191ff;
 }
-#article .article-body-container[data-color-category='default'] .content-wrapper .text-container a:hover {
-  color: #fcb5c9;
-}
 #article .article-body-container[data-color-category='default'] .content-wrapper .text-container blockquote p {
   color: #fcb5c9;
   border-left: 1px solid #fcb5c9;
@@ -5834,6 +5831,7 @@ html:hover [class^="ss-"] {
 #article .article-body-container .content-wrapper .text-container .social_shares li a {
   text-decoration: none !important;
   font-family: "sharp-sans-medium", Arial, sans-serif !important;
+  color: #05215a;
 }
 #article .article-body-container .content-wrapper .text-container .social_shares li a:hover {
   color: #e9b6c7 !important;
@@ -5880,13 +5878,12 @@ html:hover [class^="ss-"] {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-family: 'kievit-slab-pro-book', Arial, sans-serif;
-  color: #f00;
+  color: #f96573;
   transition: 0.2s all ease-out;
   text-decoration: none;
 }
 #article .article-body-container .content-wrapper .text-container a:hover {
   text-decoration: none;
-  color: #fe616e;
 }
 #article .article-body-container .content-wrapper .text-container strong {
   font-size: 1.8rem;
