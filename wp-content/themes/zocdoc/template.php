@@ -142,6 +142,8 @@ Template Name: Template
 
 <?php
 
+the_content();
+
 if( have_rows('module') ):
     while ( have_rows('module') ) : the_row();
         $type = get_sub_field('type');
@@ -297,7 +299,7 @@ echo str_replace(' ', '_', $title);
     </div>
   </div>
 </div>
-<?php } ?>
+<?php } ?> 
 
 
 
