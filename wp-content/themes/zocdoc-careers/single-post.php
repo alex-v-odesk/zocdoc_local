@@ -187,6 +187,14 @@ if (have_posts()) {
                             <span class="ss-icon facebook" >Facebook</span> 
                             Facebook
                         </a></li>
+
+                        <li><a target="_new" href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn">
+                            <span class="ss-icon" >Linkedin</span> 
+                            Linkedin
+                        </a></li>
+<!-- 
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn"> -->
+
                         <li><a target="_new" href="mailto:?subject=<?=rawurlencode(get_the_title())?>&body=<?=urlencode(get_permalink())?>">
                             <span class="ss-icon email" >Email</span> 
                             Email
