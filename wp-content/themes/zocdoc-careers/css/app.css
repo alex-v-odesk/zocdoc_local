@@ -4870,9 +4870,6 @@ html:hover [class^="ss-"] {
   opacity: 1;
   transition: 0.2s opacity Linear;
 }
-#blog-home .info span.category:hover {
-  opacity: 0.7;
-}
 #blog-home .explore-more {
   outline: none;
   display: block;
@@ -5165,23 +5162,8 @@ html:hover [class^="ss-"] {
   font-family: sharp-sans-bold;
   color: #05215a;
 }
-#blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='partnership']:hover {
-  color: #39e4ad;
-}
-#blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='company']:hover {
-  color: #44d8fb;
-}
-#blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='patients']:hover {
-  color: #fcb5c9;
-}
-#blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='provider']:hover {
-  color: #f96573;
-}
-#blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='tech']:hover {
-  color: #c191ff;
-}
 #blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='default']:hover {
-  color: #fcb5c9;
+  color: #f96573;
 }
 #blog-home .blog-post-container .content-wrapper .grid .post .text-wrapper .info {
   position: absolute;
@@ -5499,23 +5481,8 @@ html:hover [class^="ss-"] {
   font-family: sharp-sans-bold;
   color: #05215a;
 }
-#blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='partnership']:hover {
-  color: #39e4ad;
-}
-#blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='company']:hover {
-  color: #44d8fb;
-}
-#blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='patients']:hover {
-  color: #fcb5c9;
-}
-#blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='provider']:hover {
-  color: #f96573;
-}
-#blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='tech']:hover {
-  color: #c191ff;
-}
 #blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .title[data-color-category='default']:hover {
-  color: #fcb5c9;
+  color: #f96573;
 }
 #blog-topic .blog-post-container .content-wrapper .grid .post .text-wrapper .info {
   position: absolute;
