@@ -42,6 +42,14 @@
       bottom 0
       margin auto
       position absolute
+      
+      .header-link {
+        text-decoration none
+        &:visited {
+          color gulf-blue
+        }
+      }
+    
 
       h1 {
         opacity 0
@@ -51,6 +59,10 @@
         position relative
         z-index 5
         max-width 300px
+        transition 0.2s color linear
+        &:hover {
+          color #F96573
+        }
       }
 
       .info {

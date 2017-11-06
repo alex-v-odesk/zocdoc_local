@@ -4966,6 +4966,12 @@ html:hover [class^="ss-"] {
   margin: auto;
   position: absolute;
 }
+#blog-home .full-bleed-header .full-bleed-container .content-container .header-link {
+  text-decoration: none;
+}
+#blog-home .full-bleed-header .full-bleed-container .content-container .header-link:visited {
+  color: #05215a;
+}
 #blog-home .full-bleed-header .full-bleed-container .content-container h1 {
   opacity: 0;
   visibility: hidden;
@@ -4976,6 +4982,10 @@ html:hover [class^="ss-"] {
   position: relative;
   z-index: 5;
   max-width: 300px;
+  transition: 0.2s color linear;
+}
+#blog-home .full-bleed-header .full-bleed-container .content-container h1:hover {
+  color: #f96573;
 }
 #blog-home .full-bleed-header .full-bleed-container .content-container .info {
   opacity: 0;

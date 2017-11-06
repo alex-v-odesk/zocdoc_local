@@ -65,10 +65,14 @@ $popular = array(
         <div class="full-bleed-container row">
             <?php $i = 0 ?>
             <?php foreach ($featured_posts as $post) : ?>
-                <?php $categories = get_the_category($post->ID); ?>
+                <?php $categories = get_the_category($post->ID); 
+                $permalink = get_the_permalink($post->ID);
+                ?>
                 <div
                     class="content-container col-sm-offset-0 col-lg-4 col-sm-10 <?php if ($i === 0): ?>active<?php endif; ?>">
-                    <h1 class="text-content"><?php echo $post->post_title; ?></h1>
+                    <a class="header-link" href="<?php echo $permalink; ?>"><h1 class="text-content">
+                        <?php echo $post->post_title; ?>                         
+                    </h1></a>  
                     <div class="info">
                         <a href="/about/blog/<?php echo $categories[0]->slug; ?>"><span class="category text-content"><?php echo $categories[0]->name; ?></span></a> - <span
                             class="publish-date"><?php echo mysql2date('j M Y', $post->post_date); ?></span>
@@ -93,6 +97,7 @@ $popular = array(
                 <?php foreach ($featured_posts as $post) : ?>
                     <?php $categories = get_the_category($post->ID); ?>
                     <?php $catColor = get_category_color($categories[0]->slug); ?>
+                    <?php $permalink = get_the_permalink($post->ID); ?>
 
                     <li class="carouse-item col-lg-4 col-sm-4" data-id=<?php echo $i; ?>>
                         <div class="image">
@@ -108,7 +113,14 @@ $popular = array(
                                       d="M60,116.5C28.8,116.5,3.5,91.2,3.5,60S28.8,3.5,60,3.5s56.5,25.3,56.5,56.5S91.2,116.5,60,116.5z"/>
                             </svg>
                         </div>
-                        <p data-color-category="<?php echo $catColor[1]; ?>"><?php echo $post->post_title; ?></p>
+                        <p data-color-category="<?php echo $catColor[1]; ?>">
+                            <?php echo $post->post_title; ?>
+                        </p>
+<!-- 
+                        <p data-color-category="<?php echo $catColor[1]; ?>">
+                            <a class="header-link" href="<?php echo $permalink; ?>"><?php echo $post->post_title; ?></a>
+                        </p> -->
+
                         <div class="info">
                             <a href="/about/blog/<?php echo $categories[0]->slug; ?>"><span class="category"><?php echo $categories[0]->name; ?></span></a> - <span
                                 class="publish-date"><?php echo mysql2date('j M Y', $post->post_date); ?></span>
