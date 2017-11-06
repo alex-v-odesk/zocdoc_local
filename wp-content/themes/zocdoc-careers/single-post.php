@@ -179,7 +179,7 @@ if (have_posts()) {
                 <div class="social_shares">
                     <ul>
                         <li>Share Story</li>
-                        <li><a target="_new" href="https://twitter.com/intent/tweet?original_referer=<?=urlencode(get_permalink())?>&source=tweetbutton&text=<?=rawurlencode(get_the_title())?>%20-%20<?=urlencode(get_permalink())?>" target="_blank">
+                        <li><a target="_new" href="https://twitter.com/intent/tweet?original_referer=<?=urlencode(get_permalink())?>&source=tweetbutton&text=<?=rawurlencode(get_the_title())?>%20-%20<?=urlencode(get_permalink())?>">
                             <span class="ss-icon twitter" >Twitter</span> 
                             Twitter
                         </a></li>
@@ -192,8 +192,6 @@ if (have_posts()) {
                             <span class="ss-icon" >Linkedin</span> 
                             Linkedin
                         </a></li>
-<!-- 
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn"> -->
 
                         <li><a target="_new" href="mailto:?subject=<?=rawurlencode(get_the_title())?>&body=<?=urlencode(get_permalink())?>">
                             <span class="ss-icon email" >Email</span> 
