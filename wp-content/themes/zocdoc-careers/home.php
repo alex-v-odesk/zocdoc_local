@@ -113,13 +113,16 @@ $popular = array(
                                       d="M60,116.5C28.8,116.5,3.5,91.2,3.5,60S28.8,3.5,60,3.5s56.5,25.3,56.5,56.5S91.2,116.5,60,116.5z"/>
                             </svg>
                         </div>
-                        <p data-color-category="<?php echo $catColor[1]; ?>">
+
+<!--                         <p data-color-category="<?php echo $catColor[1]; ?>">
                             <?php echo $post->post_title; ?>
-                        </p>
-<!-- 
-                        <p data-color-category="<?php echo $catColor[1]; ?>">
-                            <a class="header-link" href="<?php echo $permalink; ?>"><?php echo $post->post_title; ?></a>
                         </p> -->
+
+                        <a href="<?php echo $permalink; ?>">
+                            <p data-color-category="<?php echo $catColor[1]; ?>">
+                                <?php echo $post->post_title; ?>
+                            </p>
+                        </a>
 
                         <div class="info">
                             <a href="/about/blog/<?php echo $categories[0]->slug; ?>"><span class="category"><?php echo $categories[0]->name; ?></span></a> - <span
