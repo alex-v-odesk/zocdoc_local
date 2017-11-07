@@ -44,7 +44,10 @@
             <?php $navCatColor = get_category_color($cat->slug); ?>
             <div data-color-category="<?php echo $navCatColor[1]; ?>" data-color="<?php echo $navCatColor[0]; ?>"
                  class="article-title">
-                <span class="title"><?php echo $title; ?></span> - <span class="duration"><?php echo $duration; ?> min read</span>
+                <span class="title"><?php echo $title; ?></span>
+                <?php if($duration): ?>
+                    - <span class="duration"><?php echo $duration; ?> min read</span>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
         <ul class="content-menu row center middle">
