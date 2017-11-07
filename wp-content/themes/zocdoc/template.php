@@ -138,7 +138,7 @@ Template Name: Template
   </div>
 
 
-<div>
+<div class="content-editor-text">
   <div class="max-width">
     <div class="margin">
       <div class="top">
