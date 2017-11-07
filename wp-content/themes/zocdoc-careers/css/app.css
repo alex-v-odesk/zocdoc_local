@@ -776,7 +776,7 @@ html:hover [class^="ss-"] {
   transition: 0.2s opacity linear;
 }
 .page-header .navigation li.active {
-  color: #48484d;
+  color: #f96573;
 }
 .page-header .navigation li:hover {
   opacity: 0.7;
@@ -893,23 +893,8 @@ html:hover [class^="ss-"] {
   background: #fff;
   opacity: 1;
 }
-.page-header .navigation.topics-bar ul li[data-color-category='partnership']:hover a .title {
-  color: #39e4ad;
-}
-.page-header .navigation.topics-bar ul li[data-color-category='company']:hover a .title {
-  color: #44d8fb;
-}
-.page-header .navigation.topics-bar ul li[data-color-category='patients']:hover a .title {
-  color: #fcb5c9;
-}
-.page-header .navigation.topics-bar ul li[data-color-category='provider']:hover a .title {
-  color: #f96573;
-}
-.page-header .navigation.topics-bar ul li[data-color-category='tech']:hover a .title {
-  color: #c191ff;
-}
 .page-header .navigation.topics-bar ul li[data-color-category='default']:hover a .title {
-  color: #fcb5c9;
+  color: #f96573;
 }
 .page-header .navigation.topics-bar ul li a {
   position: absolute;
