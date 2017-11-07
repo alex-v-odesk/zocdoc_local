@@ -116,7 +116,7 @@ foreach ($imagesIDs as $id) {
 
             </section>
             <?php if ($category->category_count > $page * $showposts): ?>
-                <a style="color:black; text-decoration:none;" href="/about/blog/<?php echo $category->slug;?>/?page=<?php echo($next_page); ?>" type="button" name="explore-more" class="explore-more">Explore More</a>
+                <a href="/about/blog/<?php echo $category->slug;?>/?page=<?php echo($next_page); ?>" type="button" name="explore-more" class="explore-more">Explore More</a>
             <?php endif; ?>
 
         </div>

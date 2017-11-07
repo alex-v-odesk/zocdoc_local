@@ -5297,6 +5297,8 @@ html:hover [class^="ss-"] {
   font-family: 'sharp-sans-medium', Arial, sans-serif;
   cursor: pointer;
   transition: 0.2s all linear;
+  text-decoration: none;
+  color: #000;
 }
 #blog-topic .explore-more:hover {
   background-color: #05215a;
