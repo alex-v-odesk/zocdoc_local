@@ -776,7 +776,7 @@ html:hover [class^="ss-"] {
   transition: 0.2s opacity linear;
 }
 .page-header .navigation li.active {
-  color: #f96573;
+  color: #48484d;
 }
 .page-header .navigation li:hover {
   opacity: 0.7;
@@ -892,6 +892,12 @@ html:hover [class^="ss-"] {
   transition: 0.2s all ease-out;
   background: #fff;
   opacity: 1;
+}
+.page-header .navigation.topics-bar ul li[data-color-category='company']:hover a .title {
+  color: #f96573;
+}
+.page-header .navigation.topics-bar ul li[data-color-category='tech']:hover a .title {
+  color: #f96573;
 }
 .page-header .navigation.topics-bar ul li[data-color-category='default']:hover a .title {
   color: #f96573;
