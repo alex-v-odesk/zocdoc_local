@@ -76,7 +76,9 @@ $popular = array(
                     <div class="info">
                         <a href="/about/blog/<?php echo $categories[0]->slug; ?>"><span class="category text-content"><?php echo $categories[0]->name; ?></span></a> - <span
                             class="publish-date"><?php echo mysql2date('j M Y', $post->post_date); ?></span>
-                        <a class="text-content read-more" href="<?php echo $post->guid; ?>">Read more</a>
+                        <!-- <a class="text-content read-more" href="<?php echo $post->guid; ?>">Read more</a> -->
+                        <a class="text-content read-more" href="<?php echo $permalink; ?>">Read more</a>
+
                     </div>
                 </div>
                 <div class="full-bleed-image"
