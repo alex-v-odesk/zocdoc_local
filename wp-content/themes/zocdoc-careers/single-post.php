@@ -92,7 +92,9 @@ if (have_posts()) {
                 ?>
                 <div class="nav-prev-next previous">
 
-                    <a href="<?php echo $prev_post->guid ?>">
+                    <!-- <a href="<?php echo $prev_post->guid ?>"> -->
+                    <a href="<?php echo the_permalink($prev_post); ?>">
+
                     <svg class='arrow previous' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
@@ -132,7 +134,9 @@ if (have_posts()) {
                 ?>
 
                   <div class="nav-prev-next next">
-                    <a href="<?php echo $next_post->guid ?>">
+                    <!-- <a href="<?php echo $next_post->guid ?>"> -->
+                    <a href="<?php echo the_permalink($next_post); ?>">
+
                       <svg class='arrow next' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                            viewBox="0 0 17 12" style="enable-background:new 0 0 17 12;" xml:space="preserve">
