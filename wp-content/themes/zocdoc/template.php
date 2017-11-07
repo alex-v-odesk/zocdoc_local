@@ -138,11 +138,18 @@ Template Name: Template
   </div>
 
 
-
+<div>
+  <div class="max-width">
+    <div class="margin">
+      <div class="top">
+      <?php the_content(); ?>
+      </div>
+    </div>
+  </div>
 
 <?php
 
-the_content();
+
 
 if( have_rows('module') ):
     while ( have_rows('module') ) : the_row();
