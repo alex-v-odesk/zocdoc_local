@@ -232,8 +232,11 @@ if (have_posts()) {
             <ul class="article-list row center">
                 <?php foreach ($related as $post) : ?>
                     <?php $categories = get_the_category($post->ID); ?>
+                    <?php $permalink = get_the_permalink($post->ID); ?>
                     <li class="article col-lg-4 col-sm-12">
-                        <a href="<?php echo $post->guid; ?>">
+                        <!-- <a href="<?php echo $post->guid; ?>"> -->
+                        <a href="<?php echo $permalink; ?>">
+
                             <?php if(has_post_thumbnail()) : ?>
                                 <div class="round-mask">
                                     <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt=""/>
