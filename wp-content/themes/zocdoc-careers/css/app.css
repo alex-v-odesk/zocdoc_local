@@ -8950,6 +8950,9 @@ html:hover [class^="ss-"] {
   #article .article-body-container .content-wrapper .text-container .social_shares-mobile {
     display: block;
   }
+  #article .article-body-container .content-wrapper .text-container .social_shares-mobile li {
+    list-style: none;
+  }
   #article .article-body-container .content-wrapper .text-container .social_shares-mobile a {
     color: #05215a;
   }
