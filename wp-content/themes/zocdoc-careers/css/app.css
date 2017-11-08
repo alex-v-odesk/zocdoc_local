@@ -8950,10 +8950,13 @@ html:hover [class^="ss-"] {
   #article .article-body-container .content-wrapper .text-container .social_shares-mobile {
     display: block;
   }
-  #article .article-body-container .content-wrapper .text-container .social_shares-mobile li {
+  #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul {
+    margin: 0px;
+  }
+  #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul li {
     list-style: none;
   }
-  #article .article-body-container .content-wrapper .text-container .social_shares-mobile a {
+  #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul li a {
     color: #05215a;
   }
   #article .article-body-container .content-wrapper .text-container h1,
