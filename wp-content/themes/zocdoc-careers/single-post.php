@@ -180,6 +180,7 @@ if (have_posts()) {
                 <div class="header-image" style="background-image:url(<?php the_post_thumbnail_url() ?>);"></div>
             <?php endif; ?>
             <div class="text-container">
+
                 <div class="social_shares">
                     <ul>
                         <li>Share Story</li>
@@ -203,6 +204,31 @@ if (have_posts()) {
                         </a></li>
                     </ul>
                 </div>
+
+                <div class="social_shares-mobile">
+                    <ul>
+                        <li>Share Story</li>
+                        <li><a target="_new" href="https://twitter.com/intent/tweet?original_referer=<?=urlencode(get_permalink())?>&source=tweetbutton&text=<?=rawurlencode(get_the_title())?>%20-%20<?=urlencode(get_permalink())?>">
+                            <span class="ss-icon twitter" >Twitter</span> 
+
+                        </a></li>
+                        <li><a target="_new" href="http://www.facebook.com/sharer/sharer.php?u=<?=urlencode(get_permalink())?>&t=<?=rawurlencode(get_the_title())?>">
+                            <span class="ss-icon facebook" >Facebook</span> 
+
+                        </a></li>
+
+                        <li><a target="_new" href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn">
+                            <span class="ss-icon" >Linkedin</span> 
+
+                        </a></li>
+
+                        <li><a target="_new" href="mailto:?subject=<?=rawurlencode(get_the_title())?>&body=<?=urlencode(get_permalink())?>">
+                            <span class="ss-icon email" >Email</span> 
+
+                        </a></li>
+                    </ul>
+                </div>
+
                 <?php echo the_content(); ?>
             </div>
             <div class="button-comments <?php if(get_comments_number() > 0) : ?>has-comments<?php endif;?>">

@@ -5796,6 +5796,9 @@ html:hover [class^="ss-"] {
   font-family: sharp-sans-bold;
   line-height: 2.4em !important;
 }
+#article .article-body-container .content-wrapper .text-container .social_shares-mobile {
+  display: none;
+}
 #article .article-body-container .content-wrapper .text-container h1,
 #article .article-body-container .content-wrapper .text-container h2,
 #article .article-body-container .content-wrapper .text-container h3 {
@@ -8942,6 +8945,10 @@ html:hover [class^="ss-"] {
   }
   #article .article-body-container .content-wrapper .text-container .social_shares {
     width: 200px;
+    display: none;
+  }
+  #article .article-body-container .content-wrapper .text-container .social_shares-mobile {
+    display: block;
   }
   #article .article-body-container .content-wrapper .text-container h1,
   #article .article-body-container .content-wrapper .text-container h2,
