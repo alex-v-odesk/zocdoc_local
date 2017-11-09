@@ -8,7 +8,6 @@ Template Name: Landing Page
 
 <main class="main-container">
 
-
   <div class="content-editor-text">
     <div class="max-width">
       <div class="margin">
@@ -17,18 +16,10 @@ Template Name: Landing Page
         </div>
       </div>
     </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-<?php
-  $noCTA = true; //comment this out to get the cta footer (pink background with three CTAs)
-  include( get_template_directory() . '/footer.php');
-?>
+  <?php
+    $noCTA = true; //comment this out to get the cta footer (pink background with three CTAs)
+    include( get_template_directory() . '/footer.php');
+  ?>
 </main>
