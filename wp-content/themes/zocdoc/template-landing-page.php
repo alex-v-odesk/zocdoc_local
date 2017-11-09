@@ -4,138 +4,17 @@ Template Name: Landing Page
 */
 ?>
 <?php get_header(); ?>
-  <?php
-    if (have_rows('module')):
-      $sections = array();
-      $count = 0;
-      while(have_rows('module')):the_row();
-        $section = get_sub_field('menu_title');
-        $sectionId = $count;
-        $count++;
-        if(!empty( $section )) {
-          $sectionObj = array();
-          // $sections[$sectionId] = $section;
-          $sectionObj['section']= $section;
-          $link = get_sub_field('navigation_link');
-          $sectionObj['link'] = null;
-          if(!empty( $link )){
-            $sectionObj['link']= $link;
-          }
-          array_push($sections,$sectionObj);
-        }
-        wp_reset_postdata();
-      endwhile;
-    else:
-      //no rows
-    endif;
-    wp_reset_query();
-  ?>
 
-<main class="main-container <?php
-    if (count($sections) == 0) {
-      echo 'no-pad';
-    }
-  ?>">
 
-  <div class="page-links-bar template sticky-bar smooth sticky-mobile <?php
-    if (count($sections) == 0) {
-      echo 'hide-bar';
-    }
-  ?>">
-  <div class="max-width">
+<main class="main-container">
+
+
+
     <section class="margin">
-      <div class="links-row">
-        <div class="links-parent">
-                <?php
-                    foreach ($sections as $x => $value) {
-                        $section = $sections[$x]['section'];
-                        $class = "";
-              $lineClass = "line";
-              if($x >= 3) $lineClass = "line hide-line";
-                        if($x >= 3) $class = "hide-link";
-                        $link = str_replace(' ', '_', $section);
-              if($sections[$x]['link'] != null){
-                $link = $sections[$x]['link'];
-                echo '<a class="'.$class.'" href="'.$link.'">'.$section.'</a><div class="'.$lineClass.'"></div>';
-              }
-              else{
-                            echo '<a class="'.$class.'" data-tag="'.$link.'">'.$section.'</a><div class="'.$lineClass.'"></div>';
-              }
-                } ?>
-         <?php if (count($sections) > 3) : ?>
-          <a class="more-link">more</a>
-        <?php endif ?>
-        </div>
-      </div>
-      <?php if (count($sections) > 3) : ?>
-      <div class="links-row">
-        <div class="links-parent">
-                <?php
-                    foreach ($sections as $x => $value) {
-              if ($x > 2 && $x <= 6) {
-                $section = $sections[$x]['section'];
-                $class = "";
-                $link = str_replace(' ', '_', strtolower($section));
-                if($sections[$x]['link'] != null){
-                  $link = $sections[$x]['link'];
-                  echo '<a class="'.$class.'" href="'.$link.'">'.$section.'</a><div class="line"></div>';
-                }
-                else {
-                  echo '<a class="'.$class.'" data-tag="'.$link.'">'.$section.'</a><div class="line"></div>';
-                }
-              }
-
-                } ?>
-            </div>
-      </div>
-      <?php endif ?>
-      <?php if (count($sections) > 7) : ?>
-      <div class="links-row">
-        <div class="links-parent">
-          <?php
-            foreach ($sections as $x => $value) {
-              if ($x > 6 && $x <= 10) {
-                $section = $sections[$x]['section'];
-                $class = "";
-                $link = str_replace(' ', '_', strtolower($section));
-                if($sections[$x]['link']){
-                  $link = $sections[$x]['link'];
-                  echo '<a class="'.$class.'" href="'.$link.'">'.$section.'</a><div class="line"></div>';
-                }
-                else {
-                  echo '<a class="'.$class.'" data-tag="'.$link.'">'.$section.'</a><div class="line"></div>';
-                }
-              }
-            }
-          ?>
-        </div>
-      </div>
-    <?php endif ?>
-    <?php if (count($sections) > 11) : ?>
-      <div class="links-row">
-        <div class="links-parent">
-          <?php
-            foreach ($sections as $x => $value) {
-              if ($x > 10) {
-                $section = $sections[$x]['section'];
-                $class = "";
-                $link = str_replace(' ', '_', strtolower($section));
-                if($sections[$x]['link']){
-                  $link = $sections[$x]['link'];
-                  echo '<a class="'.$class.'" href="'.$link.'">'.$section.'</a><div class="line"></div>';
-                }
-                else {
-                  echo '<a class="'.$class.'" data-tag="'.$link.'">'.$section.'</a><div class="line"></div>';
-                }
-              }
-            }
-          ?>
-        </div>
-      </div>
-      <?php endif ?>
+      
     </section>
-    </div>
-  </div>
+
+
 
 
 <div class="content-editor-text">
@@ -147,35 +26,7 @@ Template Name: Landing Page
     </div>
   </div>
 
-<?php
 
-
-
-if( have_rows('module') ):
-    while ( have_rows('module') ) : the_row();
-        $type = get_sub_field('type');
-        if($type == "Header"){
-          TEMPLATE_HEADER();
-        }
-        if($type == "Video"){
-          VIDEO();
-        }
-        if($type == "Text with form"){
-          TEXT_W_FORM();
-        }
-        if($type == "Text"){
-          TEXT();
-        }
-        if($type == "Form"){
-          FORM();
-        }
-        if($type == "Icons"){
-          ICONS();
-        }
-    endwhile;
-else :
-endif;
-?>
 
 <?php function TEMPLATE_HEADER() {
   // global $post;
