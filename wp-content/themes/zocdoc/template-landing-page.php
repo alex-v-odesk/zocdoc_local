@@ -18,8 +18,8 @@ Template Name: Landing Page
     </div>
   </div>
 
+</main>
   <?php
     $noCTA = true; //comment this out to get the cta footer (pink background with three CTAs)
     include( get_template_directory() . '/footer.php');
   ?>
-</main>
