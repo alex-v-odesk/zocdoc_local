@@ -21,8 +21,17 @@
           display block
           ul {
             margin 0px
+            display flex
+            flex-flow row
+            justify-content flex-start
+            max-width 85%
             li {
               list-style none
+              margin-right 5%
+              &:first-of-type {
+                font-weight bold
+                font-family 'sharp-sans-bold'
+              }
               a {
                 color gulf-blue
               }

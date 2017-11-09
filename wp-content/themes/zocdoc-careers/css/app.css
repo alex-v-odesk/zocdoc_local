@@ -8952,9 +8952,18 @@ html:hover [class^="ss-"] {
   }
   #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul {
     margin: 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    max-width: 85%;
   }
   #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul li {
     list-style: none;
+    margin-right: 5%;
+  }
+  #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul li:first-of-type {
+    font-weight: bold;
+    font-family: 'sharp-sans-bold';
   }
   #article .article-body-container .content-wrapper .text-container .social_shares-mobile ul li a {
     color: #05215a;
