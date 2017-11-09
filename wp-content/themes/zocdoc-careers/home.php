@@ -109,7 +109,11 @@ $popular = array(
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
                                  style="enable-background:new 0 0 120 120;">
-                                <path class="path" stroke="<?php echo $catColor[0] ?>" stroke-width="4"
+<!--                                 <path class="path" stroke="<?php echo $catColor[0] ?>" stroke-width="4"
+                                      stroke-linejoin="round"
+                                      stroke-dasharray="360" stroke-dashoffset="360" fill="none"
+                                      d="M60,116.5C28.8,116.5,3.5,91.2,3.5,60S28.8,3.5,60,3.5s56.5,25.3,56.5,56.5S91.2,116.5,60,116.5z"/> -->
+                                    <path class="path" stroke='#F96573' stroke-width="4"
                                       stroke-linejoin="round"
                                       stroke-dasharray="360" stroke-dashoffset="360" fill="none"
                                       d="M60,116.5C28.8,116.5,3.5,91.2,3.5,60S28.8,3.5,60,3.5s56.5,25.3,56.5,56.5S91.2,116.5,60,116.5z"/>
