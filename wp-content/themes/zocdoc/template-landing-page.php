@@ -6,7 +6,7 @@ Template Name: Landing Page
 <?php get_header(); ?>
 
 
-<main class="main-container">
+<main id="landing-page" class="main-container">
 
   <div class="content-editor-text">
     <div class="max-width">
