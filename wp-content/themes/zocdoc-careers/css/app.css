@@ -8768,6 +8768,7 @@ html:hover [class^="ss-"] {
   #blog-home .full-bleed-header .carousel-items-container {
     height: 150px;
     width: 300%;
+    display: none;
   }
   #blog-home .full-bleed-header .carousel-items-container ul {
     max-width: initial;
