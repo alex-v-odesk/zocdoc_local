@@ -9,14 +9,6 @@ Template Name: Landing Page
 <main class="main-container">
 
 
-
-    <section class="margin">
-      
-    </section>
-
-
-
-
 <div class="content-editor-text">
   <div class="max-width">
     <div class="margin">
