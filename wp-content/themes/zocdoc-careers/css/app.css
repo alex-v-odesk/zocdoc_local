@@ -348,9 +348,6 @@ small {
 .isMobile .canvas {
   pointer-events: none;
 }
-::-webkit-scrollbar {
-  display: none;
-}
 .hide-content {
   position: fixed;
   background: #fbfbfb;
