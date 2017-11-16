@@ -74,12 +74,14 @@ $dep_data = get_depData($data['departments'][0]['id']);
                                 <img class="culture-image" src=<?php echo $dep_data['team_culture'][0]['image']; ?> alt=""/>
                                 <img class="mask culture-mask" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zocdoc_video_mask_white.png"/>
                             </div>
-                        <?php endif; ?>
 
                         <p class="quote"
                            style="color:<?php echo $dep_data['team_color'] ?>;"><?php echo $dep_data['team_culture'][0]['quote']; ?></p>
                         <span
                             class="employee-name"><strong><?php echo $dep_data['team_culture'][0]['employee_name']; ?></strong>, <?php echo $dep_data['team_quote'][0]['role']; ?></span>
+                            
+                        <?php endif; ?>
+
 
                     </div>
 
