@@ -893,13 +893,7 @@ html:hover [class^="ss-"] {
   background: #fff;
   opacity: 1;
 }
-.page-header .navigation.topics-bar ul li[data-color-category='company']:hover a .title {
-  color: #f96573;
-}
-.page-header .navigation.topics-bar ul li[data-color-category='tech']:hover a .title {
-  color: #f96573;
-}
-.page-header .navigation.topics-bar ul li[data-color-category='default']:hover a .title {
+.page-header .navigation.topics-bar ul li:hover a .title {
   color: #f96573;
 }
 .page-header .navigation.topics-bar ul li a {
