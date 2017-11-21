@@ -772,6 +772,9 @@ html:hover [class^="ss-"] {
   opacity: 1;
   transition: 0.2s opacity linear;
 }
+.page-header .navigation li:first-of-type {
+  border-left: 0.5px solid #d5d5d9;
+}
 .page-header .navigation li.active {
   color: #48484d;
 }
