@@ -76,7 +76,10 @@
                 } ?>
             <?php endforeach; ?>
             <li>
-                <a id="blog-home" href="/about/blog"><span class="title">Blog Home</span></a>
+                <a id="blog-topic-home" href="/about/blog"><span class="title">Blog Home</span>
+                    <span class="round-mask"><img class="zee" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zee.png" alt=""/></span>
+                    <span class="description">Blog home page where you'll find a list of all posts</span>
+                </a>
             </li>
         </ul>
     </div>

@@ -913,6 +913,9 @@ html:hover [class^="ss-"] {
   transition: 0.3s height ease-in-out;
   background: #fff;
 }
+.page-header .navigation.topics-bar ul li a #blog-topic-home {
+  background-color: #fff !important;
+}
 .page-header .navigation.topics-bar ul li a .title {
   display: block;
   padding: 23px 0;
@@ -954,11 +957,9 @@ html:hover [class^="ss-"] {
   height: 310px;
   box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.3);
 }
-.page-header .navigation.topics-bar ul li:hover a#blog-home {
-  height: 100%;
-}
-.page-header .navigation.topics-bar ul li:hover a#blog-home:hover {
+.page-header .navigation.topics-bar ul li:hover a#blog-topic-home {
   color: #f96573;
+  background: #fff !important;
 }
 .page-header .btn-join,
 .page-header .btn-about {
