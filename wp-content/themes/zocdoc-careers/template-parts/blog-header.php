@@ -75,7 +75,9 @@
                     <?php $i++;
                 } ?>
             <?php endforeach; ?>
-            <li><span class="title">Blog Home</span></li>
+            <li>
+                <a id="blog-home" href="/about/blog"><span class="title">Blog Home</span></a>
+            </li>
         </ul>
     </div>
 
