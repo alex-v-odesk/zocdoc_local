@@ -63,6 +63,7 @@ if (have_posts()) {
         <div class="full-bleed-container row middle center">
 
             <div class="content-container col-lg-12 col-sm-12">
+
                 <h1><?php echo $title; ?></h1>
                 <div class="info">
                     <span class="category"><?php echo $category->name; ?></span> -

@@ -79,6 +79,9 @@
     </div>
 
     <button type="button" name="btn-dropdown" class="dropdown-cta">Topics</button>
+        <div class="back-home">
+          <span>Blog Home</span>
+        </div>
     <a href="#" class="btn-search">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px"
