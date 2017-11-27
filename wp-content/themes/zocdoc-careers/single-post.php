@@ -42,7 +42,7 @@ if (have_posts()) {
 
 ?>
 
-<?php get_template_part('template-parts/blog', 'header'); ?>
+<?php get_template_part('template-parts/blog', 'single-header'); ?>
 
 <div id="article" class="page-wrapper">
 
