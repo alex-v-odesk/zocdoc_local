@@ -352,9 +352,9 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 		return (_gsScope.GreenSockGlobals || _gsScope);
 	};
 	if (typeof(module) !== "undefined" && module.exports) { //node
-		require("../TweenLite.js");
+		require("gsap/TweenLite");
 		module.exports = getGlobal();
 	} else if (typeof(define) === "function" && define.amd) { //AMD
-		define(["TweenLite"], getGlobal);
+		define(["gsap/TweenLite"], getGlobal);
 	}
 }());
