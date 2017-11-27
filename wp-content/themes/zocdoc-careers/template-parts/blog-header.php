@@ -82,7 +82,7 @@
                         <span class="title">Blog Home</span>
                         <span class="round-mask"><img class="zee" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zee.png" alt="zee"/>
                         </span>
-                        <span class="description">Blog home page where you'll find a list of all posts</span>
+                        <span class="description">Visit the Zocdoc Blog to find a complete list of all posts</span>
                     </a>
                 </li>
             <?php endif; ?>
