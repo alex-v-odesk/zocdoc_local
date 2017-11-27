@@ -23,7 +23,7 @@ foreach ($imagesIDs as $id) {
 
 
 
-<?php get_template_part('template-parts/blog', 'single-header'); ?>
+<?php get_template_part('template-parts/blog', 'header'); ?>
 
 <div id="blog-topic" class="page-wrapper">
 
