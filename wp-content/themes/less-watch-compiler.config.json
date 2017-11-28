@@ -1,7 +1,0 @@
-{
-    "allowedExtensions":[".less", ".css"],
-    "defaults": {
-        "watchFolder": "styles/input",
-        "outputFolder": "styles/output"
-    }
-}
