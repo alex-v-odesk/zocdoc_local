@@ -5253,6 +5253,7 @@ html:hover [class^="ss-"] {
   max-width: 70%;
   margin: 20px auto 0px auto;
   transition: 0.2s color linear;
+  border: 1px #f00 solid;
 }
 #blog-home .must-read-container .article-list .article a:hover .title {
   color: #fe616e;
