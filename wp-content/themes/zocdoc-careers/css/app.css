@@ -5118,7 +5118,6 @@ html:hover [class^="ss-"] {
 }
 #blog-home .blog-post-container .content-wrapper {
   margin: 0px auto;
-  max-width: 1280px;
   padding-top: 110px;
 }
 #blog-home .blog-post-container .content-wrapper .grid {

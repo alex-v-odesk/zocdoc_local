@@ -161,7 +161,7 @@ $topics = get_terms('category', array(
                     <?php $permalink = get_the_permalink($post->ID); ?>
 
                     <article id="post-<?php echo $i ?>"
-                             class="post col-lg col-lg-6 col-sm-12 <?php if ($i > 5) : ?>hidden<?php endif; ?>">
+                             class="post col-lg col-lg-4 col-sm-12 <?php if ($i > 5) : ?>hidden<?php endif; ?>">
 
                         <!-- <a href="<?php echo $post->guid; ?>"> -->
                             <a href="<?php echo $permalink; ?>">
