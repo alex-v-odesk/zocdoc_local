@@ -5,7 +5,10 @@ Template Name: Landing Page
 ?>
 <?php get_header(); ?>
 
-<?php $bg_color = get_field('background-color'); ?>
+<?php $headline = get_field('headline'); 
+$subheadline = get_field('subheadline');
+$form = get_field('form');
+?>
 
 
 <main id="landing-page" class="main-container" style="background-color:<?php the_field('background_color'); ?>">
@@ -16,7 +19,9 @@ Template Name: Landing Page
     <div class="max-width">
       <div class="margin">
         <div class="top">
-        <?php the_content(); ?>
+          <h1><?php echo $headline; ?></h1>
+          <h2><?php echo $subheadline; ?></h2>
+          <div><?php echo $form; ?></div>
         </div>
       </div>
     </div>
