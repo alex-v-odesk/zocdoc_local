@@ -50,11 +50,11 @@ $topics = get_terms('category', array(
     'hide_empty' => 0
 ));
 
-$popular = array(
-    'post_type' => 'post,',
-    'limit' => 3,
-    'stats_category' => 1
-);
+// $popular = array(
+//     'post_type' => 'post,',
+//     'limit' => 3,
+//     'stats_category' => 1
+// );
 
 ?>
 
