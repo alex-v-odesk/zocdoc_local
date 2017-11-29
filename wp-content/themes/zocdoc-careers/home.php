@@ -17,9 +17,11 @@ $page_for_posts = get_option( 'page_for_posts' );
 $must_read_title = get_field('must_read_title',$page_for_posts);
 
 $featured = array(
-    'tag' => 'featured',
+    // 'tag' => 'featured',
     'showposts' => 3,
     'post_status' => 'publish',
+    'orderby' => 'date',
+    'order' => 'DESC',
     'caller_get_posts' => 1
 );
 $featured_posts = get_posts($featured);
