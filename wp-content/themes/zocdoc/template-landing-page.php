@@ -21,7 +21,7 @@ $form = get_field('form');
         <img src="<?php echo $hero_icon; ?>">
         <h1 class="hero-text"><?php echo $headline; ?></h1>
         <h2 class="hero-text"><?php echo $subheadline; ?></h2>
-        <!-- <p class="body-copy hero-text"><?php echo $body_copy; ?></p> -->
+        <p class="body-copy hero-text"><?php echo $body_copy; ?></p>
         <div class="form-embed">
           <?php echo $form; ?>
         </div>
