@@ -51,6 +51,16 @@
             </div>
         <?php endif; ?>
         <ul class="content-menu row center middle">
+            <?php if(!is_home()) : ?>
+                <li>
+                    <a id="blog-topic-home" href="/about/blog">
+                        <span class="title">Blog Home</span>
+                        <span class="round-mask"><img class="zee" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zee.png" alt="zee"/>
+                        </span>
+                        <span class="description">Visit the Zocdoc Blog to find a complete list of all posts</span>
+                    </a>
+                </li>
+            <?php endif; ?>
             <?php $i = 0; ?>
             <?php foreach ($topics as $topic) : ?>
                 <?php if( $topic->name == "Team" || $topic->name == "Spokespeople" ) {
@@ -63,6 +73,8 @@
                         }
                     } ?>
                     <?php $catColor = get_category_color($topic->slug); ?>
+
+
                     <li data-index="<?php echo $i; ?>" data-id="<?php the_sub_field('hash'); ?>"
                         data-color-category="<?php echo $catColor[1]; ?>" data-color="<?php echo $catColor[0]; ?>">
                         <a href="/about/blog/<?php echo $topic->slug; ?>">
@@ -75,17 +87,6 @@
                     <?php $i++;
                 } ?>
             <?php endforeach; ?>
-            
-            <?php if(!is_home()) : ?>
-                <li>
-                    <a id="blog-topic-home" href="/about/blog">
-                        <span class="title">Blog Home</span>
-                        <span class="round-mask"><img class="zee" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zee.png" alt="zee"/>
-                        </span>
-                        <span class="description">Visit the Zocdoc Blog to find a complete list of all posts</span>
-                    </a>
-                </li>
-            <?php endif; ?>
         </ul>
     </div>
 
