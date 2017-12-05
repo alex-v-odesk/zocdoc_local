@@ -140,8 +140,7 @@ Header append Vary: Accept-Encoding
 # BEGIN Redirects
 
 Redirect 301 /about/blog//back-pain/ https://www.zocdoc.com/about/blog/for-patients/back-pain-myths-vs-facts/
-Redirect 301 /about/blog//can-your-skin-burn-or-tan-through-glass-fact-vs-myth/ https://www.zocdoc.com/about/blog/
-for-patients/can-your-skin-burn-or-tan-through-glass-fact-vs-myth/
+
 Redirect 301 /about/blog//does-soy-feminize-men-fact-vs-myth/feed/ https://www.zocdoc.com/about/blog/for-patients/does-soy-feminize-men-fact-vs-myth/
 
 
