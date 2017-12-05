@@ -138,14 +138,12 @@ Template Name: Template
   </div>
 
 
-<div class="content-editor-text">
-  <div class="max-width">
-    <div class="margin">
+
+
       <div class="top">
       <?php the_content(); ?>
       </div>
-    </div>
-  </div>
+
 
 <?php
 
