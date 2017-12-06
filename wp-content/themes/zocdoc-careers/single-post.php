@@ -36,6 +36,7 @@ if (have_posts()) {
         'post_type' => 'post',
         'numberposts' => 2,
         'post__not_in' => array($id)
+
     );
     $related = get_posts($args);
 }
@@ -260,15 +261,17 @@ if (have_posts()) {
                 <?php foreach ($related as $post) : ?>
                     <?php $categories = get_the_category($post->ID); ?>
                     <?php $permalink = get_the_permalink($post->ID); ?>
+                    <?php $thumbnail = wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>
                     <li class="article col-lg-4 col-sm-12">
                         <!-- <a href="<?php echo $post->guid; ?>"> -->
                         <a href="<?php echo $permalink; ?>">
 
-                            <?php if(has_post_thumbnail()) : ?>
+                            <?php if($thumbnail) : ?>
                                 <div class="round-mask">
                                     <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt=""/>
                                 </div>
                             <?php else : ?>
+
                                 <div class="round-mask" style="background-color:<?php echo $catColor[0]; ?>"></div>
                             <?php endif; ?>
                             <h3 class="title"><?php echo $post->post_title; ?></h3>
