@@ -271,7 +271,6 @@ if (have_posts()) {
                                     <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt=""/>
                                 </div>
                             <?php else : ?>
-
                                 <div class="round-mask" style="background-color:<?php echo $catColor[0]; ?>"></div>
                             <?php endif; ?>
                             <h3 class="title"><?php echo $post->post_title; ?></h3>
