@@ -148,5 +148,7 @@ Redirect 301 /about/blog//verified-reviews-why-they-work/ https://www.zocdoc.com
 
 Redirect 301 /about/blog//get-butterflies-stomach-weird-science-daily-life/feed/ https://www.zocdoc.com/about/blog/for-patients/get-butterflies-stomach-weird-science-daily-life/
 
+Redirect 301 /about/blog//get-butterflies-stomach-weird-science-daily-life/ https://www.zocdoc.com/about/blog/for-patients/get-butterflies-stomach-weird-science-daily-life/
+
 
 # END Redirects
