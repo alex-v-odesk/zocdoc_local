@@ -76,7 +76,8 @@ get_header();
 
   	<?php endwhile;
   	   else:
-          echo "<p class='no-results'>You stumped us. Sorry, we don’t have an answer to this one.</p>";
+          echo "<p class='no-results'>You stumped us. Sorry, we don’t have an answer to this one.</p>
+          <div class='no-results back-home'><a href='/about/blog'>&#8592 Back to blog home</a></div>";
           endif;
       ?>
       </div>
