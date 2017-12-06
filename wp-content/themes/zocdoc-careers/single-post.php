@@ -271,7 +271,9 @@ if (have_posts()) {
                                     <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt=""/>
                                 </div>
                             <?php else : ?>
-                                <div class="round-mask" style="background-color:<?php echo $catColor[0]; ?>"></div>
+                                <div class="round-mask">
+                                    <img class="zee" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zee.png" alt="zee"/>
+                                </div>
                             <?php endif; ?>
                             <h3 class="title"><?php echo $post->post_title; ?></h3>
                             <div class="info">
