@@ -154,5 +154,9 @@ Redirect 301 /about/blog//are-egg-yolks-bad-for-you-fact-vs-myth/feed/ https://w
 
 Redirect 301 /about/blog//are-egg-yolks-bad-for-you-fact-vs-myth/ https://www.zocdoc.com/about/blog/for-patients/are-egg-yolks-bad-for-you-fact-vs-myth/
 
+Redirect 301 /about/blog//is-msg-a-neurotoxin-fact-vs-myth/ https://www.zocdoc.com/about/blog/for-patients/is-msg-a-neurotoxin-fact-vs-myth/
+
+Redirect 301 /about/blog//is-msg-a-neurotoxin-fact-vs-myth/feed/ https://www.zocdoc.com/about/blog/for-patients/is-msg-a-neurotoxin-fact-vs-myth/
+
 
 # END Redirects
