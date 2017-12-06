@@ -25,7 +25,18 @@ a {
 }
 .footer-extension {
   @media @mobile {
-    display: none;
+    /*display: none;*/
+    .server {
+      display: none;
+    }
+    .copyright {
+      float: none!important;
+      margin: auto;
+    }
+    #made-in-ny-container {
+      width: auto;
+      text-align: center;
+    }
   }
 }
 .max-width {
@@ -732,6 +743,9 @@ a {
 }
 footer {
   @media @desktop {
+    .server {
+      display: none;
+    }
     .legal {
       text-align: center;
 
@@ -741,7 +755,7 @@ footer {
           float: none;
         }
         &:first-of-type, &:last-of-type {
-          display: none;
+          /*display: none;*/
         }
       }
     }
