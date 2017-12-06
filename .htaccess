@@ -150,5 +150,9 @@ Redirect 301 /about/blog//get-butterflies-stomach-weird-science-daily-life/feed/
 
 Redirect 301 /about/blog//get-butterflies-stomach-weird-science-daily-life/ https://www.zocdoc.com/about/blog/for-patients/get-butterflies-stomach-weird-science-daily-life/
 
+Redirect 301 /about/blog//are-egg-yolks-bad-for-you-fact-vs-myth/feed/ https://www.zocdoc.com/about/blog/for-patients/are-egg-yolks-bad-for-you-fact-vs-myth/
+
+Redirect 301 /about/blog//are-egg-yolks-bad-for-you-fact-vs-myth/ https://www.zocdoc.com/about/blog/for-patients/are-egg-yolks-bad-for-you-fact-vs-myth/
+
 
 # END Redirects
