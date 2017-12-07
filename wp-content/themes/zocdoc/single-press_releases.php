@@ -11,9 +11,9 @@
 <div class="max-width">
     <section class="margin">
     <a class="sg-header8" href="<?php bloginfo('url'); ?>/press">Press</a>
-    <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+    <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
     <a class="sg-header8" href="<?php bloginfo('url'); ?>/press/news/">News</a>
-    <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+    <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
     <a class="sg-header8 dim title" href="<?php the_permalink()?>">
     	<?php the_title()?>
     </a>

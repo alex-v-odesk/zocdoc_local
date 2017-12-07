@@ -12,9 +12,9 @@
 <div class="max-width">
     <section class="margin">
       <a class="sg-header8" href="<?php bloginfo('url'); ?>/press">Press</a>
-       <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+       <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
       <a class="sg-header8" href="<?php bloginfo('url'); ?>/press/videos">Videos</a>
-       <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+       <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
       <a class="sg-header8 dim title" href="<?php the_permalink()?>"><?php the_title() ?></a>
   </section>
   </div>
@@ -82,9 +82,9 @@ foreach ($terms as $term) {
         $id = getYoutubeThumb(get_field('video')); ?>
         <div class="video">
         <div class="image">
-          <img src="https://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg">
+          <img src="https://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg" title="video thumbnail" alt="video thumbnail">
             <a href="<?php the_permalink()?>">
-             <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/play.png" />
+             <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/play.png" title="play icon" alt="play icon"/>
             </a>
         </div>
         <div class="info">
