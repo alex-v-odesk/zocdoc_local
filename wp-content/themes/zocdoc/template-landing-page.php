@@ -11,7 +11,6 @@ $headline = get_field('headline', false, false);
 $subheadline = get_field('subheadline', false, false);
 $body_copy = get_field('body_copy', false, false);
 $form = get_field('form');
-var_dump($hero_icon);
 ?>
 
 

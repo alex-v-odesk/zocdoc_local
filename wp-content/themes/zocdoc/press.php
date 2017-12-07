@@ -250,7 +250,7 @@ foreach($sections as $section){
 ?>
 <div id="spokespeople" class="link-el">
 	<div class="max-width header-text">
-		<a href="/press/spokespeople/" class="sg-header4 margin">Spokespeople</a>
+		<a href="<?php bloginfo('url'); ?>/press/spokespeople/" class="sg-header4 margin">Spokespeople</a>
 	</div>
 	<div class="spokespeople max-width">
 	<div class="margin">
