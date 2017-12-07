@@ -11,6 +11,7 @@ $headline = get_field('headline', false, false);
 $subheadline = get_field('subheadline', false, false);
 $body_copy = get_field('body_copy', false, false);
 $form = get_field('form');
+var_dump($hero_icon);
 ?>
 
 
@@ -18,7 +19,7 @@ $form = get_field('form');
   <div class="max-width">
     <div class="margin">
       <div class="top">
-        <img src="<?php echo $hero_icon; ?>">
+        <img src="<?php echo $hero_icon['url']; ?>" title="<?php echo $hero_icon['title']; ?>" alt="<?php echo $hero_icon['alt']; ?>">
         <h1 class="hero-text"><?php echo $headline; ?></h1>
         <h2 class="hero-text"><?php echo $subheadline; ?></h2>
         <p class="body-copy hero-text"><?php echo $body_copy; ?></p>
