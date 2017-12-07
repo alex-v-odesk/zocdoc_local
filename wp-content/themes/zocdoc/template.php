@@ -316,7 +316,7 @@ echo str_replace(' ', '_', $title);
         while (have_rows('ctas', $id)) : the_row();?>
           <article>
             <p class="sg-header4"><?php the_sub_field('caption_text');?></p>
-            <img src="<?php the_sub_field('cta_graphic')?>">
+            <img src="<?php the_sub_field('cta_graphic')?>" title="cta graphic" alt="cta graphic">
             <a class="sg-btn-med" href="<?php the_sub_field('link') ?>"><?php the_sub_field('link_label');?></a>
           </article>
       <?php endwhile;
@@ -345,7 +345,7 @@ echo str_replace(' ', '_', $title);
         while ( have_rows('icons') ) : the_row(); ?>
       <article>
         <?php the_sub_field('icon_header');?>
-        <img src="<?php the_sub_field('icon')?>">
+        <img src="<?php the_sub_field('icon')?>" title="icon image" alt="icon image">
         <?php the_sub_field('icon_text');?>
       </article>
       <?php

@@ -20,7 +20,7 @@ $query = new WP_Query(array(
 <div class="max-width">
   <section class="margin">
     <a class="sg-header8" href="<?php bloginfo('url'); ?>">About</a>
-    <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+    <img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
     <a class="sg-header8 dim" href="<?php bloginfo('url'); ?>/investors">Investors</a>
   </section>
   </div>
@@ -42,7 +42,7 @@ $query = new WP_Query(array(
     <?php while($query->have_posts() ) : $query->the_post(); ?>
       <div class="investor">
         <section>
-            <img src="<?php the_field('logo') ?>" />
+            <img src="<?php the_field('logo') ?>" title="investor logo" alt="investor logo" />
 
             <?php
                 the_content();
