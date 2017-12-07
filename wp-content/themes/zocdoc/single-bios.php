@@ -25,21 +25,21 @@
 	<a class="sg-header8" href="<?php bloginfo('url');?>">
 		About
 	</a>
-	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
 	<a class="sg-header8" href="<?php bloginfo('url');?>/team">
 		Team
 	</a>
-	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
 	<a class="sg-header8 dim" href="<?php bloginfo('url');?>/bios/<?php echo( basename(get_permalink())) ?>">
 		<?php the_title()?>
 	</a>
 <?php else:?>
 	<a class="sg-header8" href="<?php bloginfo('url'); ?>/press">Press</a>
-	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
 	<a class="sg-header8" href="<?php bloginfo('url'); ?>/press/spokespeople">
 		Spokespeople
 	</a>
-	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" />
+	<img class="padding" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/location_arrow.png" title="right arrow" alt="right arrow" />
 	<a class="sg-header8 dim" href="<?php bloginfo('url'); ?>/spokespeople/<?php echo( basename(get_permalink())) ?>">
 		<?php the_title()?>
 	</a>

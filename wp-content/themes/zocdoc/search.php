@@ -16,7 +16,6 @@
   </div>
   </div>
 
-
 <div class="max-width">
 <div class="search-parent wider">
 <form role="search" method="get" id="searchform" action="<?php bloginfo('url') ?>">
