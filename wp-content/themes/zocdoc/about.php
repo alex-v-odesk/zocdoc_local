@@ -118,7 +118,7 @@ Template Name: About
     <div class="max-width">
         <div class="margin">
             <h2 class="sg-header2" id="leadership"><?php the_field('leadership_section_title')?></h2>
-            <a class="about-more-link" href="<?php bloginfo('url'); ?>/team"><?php the_field('leadership_section_link_label')?><img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/blue_right_arrow.png" /></a>
+            <a class="about-more-link" href="<?php bloginfo('url'); ?>/team"><?php the_field('leadership_section_link_label')?><img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/blue_right_arrow.png" title="right arrow" alt="right arrow"/></a>
         </div>
     </div>
 
@@ -257,7 +257,7 @@ Template Name: About
 
 <div id="investors" class="investors link-el">
     <h2 class="sg-header2"><?php the_field("investor_section_title"); ?></h2>
-    <a class="about-more-link" href="<?php bloginfo('url'); ?>/investors">Learn more<img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/blue_right_arrow.png" /></a>
+    <a class="about-more-link" href="<?php bloginfo('url'); ?>/investors">Learn more<img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/blue_right_arrow.png" title="right arrow" alt="right arrow" /></a>
 
 <div class="investor-grid">
     <?php
@@ -299,7 +299,7 @@ Template Name: About
 
 
     <h2 class="sg-header2"><?php the_field('video_label') ?></h2>
-	<img id="featured-play" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/play.png" />
+	<img id="featured-play" src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/play.png" title="play icon" alt="play icon" />
 </div>
 <?php get_footer(); ?>
 </main>
