@@ -45,7 +45,7 @@ Template Name: About
         </div>
 
         <section class="bottle">
-            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll1.png" />
+            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll1.png" title="pill bottle" alt="pill bottle" />
             <div class="text">
                 <h3 class="sg-header3"><?php echo $story[0]['story_header'];?></h3>
                 <?php echo $story[0]['story_text'];?>
@@ -58,21 +58,21 @@ Template Name: About
             </div>
         </section>
         <section class="calendar">
-            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll2.png" />
+            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll2.png" title="medical supplies" alt="medical supplies"/>
             <div class="text">
                 <h3 class="sg-header3"><?php echo $story[2]['story_header'];?></h3>
                 <?php echo $story[2]['story_text'];?>
             </div>
         </section>
         <section class="phone">
-            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll3.png" />
+            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll3.png" title="tech imagery" alt="tech imagery" />
             <div class="text">
                 <h3 class="sg-header3"><?php echo $story[3]['story_header'];?></h3>
                 <?php echo $story[3]['story_text'];?>
            </div>
         </section>
         <section class="doctor">
-            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll4.png" />
+            <img src="<?php echo get_theme_root_uri(); ?>/zocdoc/styles/output/images/aboutscroll4.png" title="happy doctor" alt="happy doctor" />
         </section>
     </div>
   </div>
