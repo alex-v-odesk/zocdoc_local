@@ -1,4 +1,3 @@
-
 <header class="sg-desktop-grid layout-header global " style="z-index: 999999999">
     <div class="sg-yellow-bg">
         <div class="sg-row sg-yellow-bg header-container">
@@ -19,7 +18,7 @@
             ?>
             <?php function PARTNER_LOGO() {
                 ?>
-            <img style="max-height: 50px; margin-left: -30px; margin-top:-10px;" src="<?php the_sub_field('partner_logo_img') ?>">
+            <img style="max-height: 50px; margin-left: -30px; margin-top:-10px;" src="<?php the_sub_field('partner_logo_img') ?>" alt="partner logo" title="partner logo">
             <?php } ?>
 </td>
                 </tr></tbody></table>
