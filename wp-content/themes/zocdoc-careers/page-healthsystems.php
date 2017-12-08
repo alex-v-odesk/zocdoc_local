@@ -207,7 +207,7 @@
             <div class="content">
                 <?php for ($x = 0; $x <= 6; $x++) { ?>
                     <img class="cash-<?php echo $x ?> cash"
-                         src="<?php echo get_template_directory_uri() ?>/assets/images/cash.png">
+                         src="<?php echo get_template_directory_uri() ?>/assets/images/cash.png" title="cash" alt="cash">
                 <?php } ?>
 
                 <h4><?php the_field('percentage_number'); ?><span>%</span></h4>
@@ -225,7 +225,7 @@
 
     <article class="loyalty full-size-block center">
 
-        <img class="bg-image" src="<?php the_field('loyalty_left_bigger_image'); ?>">
+        <img class="bg-image" src="<?php the_field('loyalty_left_bigger_image'); ?>" title="zd dude" alt="zd dude">
         <div class="content">
             <h2><?php the_field('loyalty_title'); ?></h2>
             <p class="heart center row middle">
@@ -245,7 +245,7 @@
             <h2><?php the_field('smart_title'); ?></h2>
             <p class="text"><?php the_field('smart_text'); ?></p>
         </div>
-        <img class="bg-image" src="<?php the_field('smart_right_bigger_image'); ?>">
+        <img class="bg-image" src="<?php the_field('smart_right_bigger_image'); ?>" title="smart" alt="smart">
 
     </article>
 
@@ -254,7 +254,7 @@
         <div class="stars-content content row center middle">
             <div class="content-text">
                 <?php for ($x = 0; $x <= 6; $x++) { ?>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/stars.svg"
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/stars.svg" title="star" alt="star"
                          class="stars-<?php echo $x; ?> stars-icon">
                 <?php } ?>
                 <h4><?php the_field('stars_number'); ?></h4>
@@ -273,7 +273,7 @@
 
                 <h4>
                     <?php the_field('reviews_number'); ?>
-                    <img class="trophy" src="<?php the_field('reviews_image'); ?>">
+                    <img class="trophy" src="<?php the_field('reviews_image'); ?>" title="reviews" alt="reviews">
                 </h4>
 
                 <h3><?php the_field('reviews_title'); ?></h3>
@@ -297,7 +297,7 @@
                      } ?><?php $j++; endwhile; ?>"></div>
             </div>
 
-            <img class="mask" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zocdoc_video_mask_white.png"/>
+            <img class="mask" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/zocdoc_video_mask_white.png"/ title="video mask" alt="video mask">
 
             <?php $x = 1; ?>
             <?php $coverUrl ?>
@@ -311,7 +311,7 @@
                         <div class="content">
                             <h4><?php echo the_field('series_title'); ?></h4>
                             <h5><span>Episode <?php echo $x; ?> </span><?php echo get_sub_field('episode_name'); ?></h5>
-                            <p class="play"><img src=<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/play.svg></p>
+                            <p class="play"><img src=<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/play.svg title="play icon" alt="play icon"></p>
                         </div>
 
                     </div>
@@ -323,11 +323,11 @@
             <div class="cta">
                 <p class="open">
                     <span>Watch other episodes</span>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/arrow.svg" class="arrow">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/arrow.svg" class="arrow" title="arrow" alt="arrow">
                 </p>
                 <p class="close">
                     <span>Close other episodes</span>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/cross.svg" class="cross">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/cross.svg" class="cross" title="close" alt="close">
                 </p>
                 <span class="line"></span>
             </div>
@@ -344,7 +344,7 @@
 
                     <div class="poster"
                          style="background:url(<?php echo $imgURL; ?>) 50% 50% / cover no-repeat;">
-                        <img class="mask" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/masks/zocdoc_video_mask_white_0<?php echo $i; ?>.png"/>
+                        <img class="mask" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/masks/zocdoc_video_mask_white_0<?php echo $i; ?>.png" title="video mask" alt="video mask"/>
                     </div>
 
                     <h5><?php echo get_sub_field('episode_name'); ?></h5>
@@ -367,7 +367,7 @@
 
                     <?php while (have_rows('contact_personas')) : the_row(); ?>
                         <div class="hidden">
-                            <img src="<?php echo get_sub_field('contact_persona_image'); ?>" class="img-team">
+                            <img src="<?php echo get_sub_field('contact_persona_image'); ?>" class="img-team" title="contact" alt="contact">
                         </div>
                     <?php endwhile; ?>
 
