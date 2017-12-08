@@ -42,7 +42,7 @@ $data = get_job_board($locationID);
               3 locations.
           </p>
       </div>
-      <img src="<?php the_field('header_image'); ?>" class="cover">
+      <img src="<?php the_field('header_image'); ?>" class="cover" title="team photo" alt="team photo">
       <span class="layer"></span>
 
       <canvas id="intro-list-canvas" class="canvas" resize></canvas>
@@ -159,7 +159,7 @@ $data = get_job_board($locationID);
                             <p class="quote-text" style="color:<?php echo $teamColor?>;"><?php echo $quote['quote']; ?></p>
                             <span class="employee-name"><?php echo $quote['employee_name']; ?></span>
                             <span class="role"><?php echo $quote['role']; ?></span>
-                            <img src="<?php echo $quote['image']; ?>" alt="" />
+                            <img src="<?php echo $quote['image']; ?>" title="employee photo" alt="employee photo" />
 
                         <?php endif; ?>
                       <?php endwhile; ?>
