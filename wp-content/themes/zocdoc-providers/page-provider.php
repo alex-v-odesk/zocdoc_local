@@ -189,7 +189,7 @@ echo str_replace(' ', '_', $title);
           //vars
           $image = get_sub_field('logo_image');
         ?>
-          <div class="logo-panel"><img src="<?php echo $image; ?>" alt="" /></div>
+          <div class="logo-panel"><img src="<?php echo $image; ?>" alt="logo slide" title="logo slide" /></div>
         <?php endwhile; ?>
         <?php endif; ?>
       </div>
@@ -213,12 +213,12 @@ echo str_replace(' ', '_', $title);
           <h5 class="sg-para3"><?php the_sub_field('text_left_paragraph') ?></h5>
         </div>
         <div class="text-w-image">
-          <img src="<?php the_sub_field('image_right') ?>">
+          <img src="<?php the_sub_field('image_right') ?>" alt="right aligned image" title="right aligned image">
         </div>
       </div>
       <div class="text-w-image-container wrap">
         <div class="text-w-image">
-          <img src="<?php the_sub_field('image_left') ?>">
+          <img src="<?php the_sub_field('image_left') ?>" alt="left aligned image" title="left aligned image">
         </div>
         <div class="text-w-image prov-text">
           <h5 class="sg-header7"><?php the_sub_field('text_right_hed') ?></h5>
@@ -269,7 +269,7 @@ echo str_replace(' ', '_', $title);
           ?>
           <div class="why-join-icon">
             <h5 class="sg-header7 icon-header"><?php echo $hed; ?></h5>
-            <img src="<?php echo $image; ?>">
+            <img src="<?php echo $image; ?>" title="why join image" alt="why join image">
             <h5 class="sg-para3 icon-dek"><?php echo $dek; ?></h5>
           </div>
           <?php endwhile; ?>
