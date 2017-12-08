@@ -53,14 +53,14 @@
 
         <div class="content">
 
-            <img class="first-img icon-patient-first" src="<?php the_field('patient_icon_first'); ?>">
-            <img class="second-img icon-patient-first" src="<?php the_field('patient_icon_second'); ?>">
-            <img class="third-img icon-patient-first" src="<?php the_field('patient_icon_third'); ?>">
+            <img class="first-img icon-patient-first" src="<?php the_field('patient_icon_first'); ?>" title="alarm image" alt="alarm image">
+            <img class="second-img icon-patient-first" src="<?php the_field('patient_icon_second'); ?>" title="email image" alt="email image">
+            <img class="third-img icon-patient-first" src="<?php the_field('patient_icon_third'); ?>" title="calendar image" alt="calendar image">
 
             <h2><?php the_field('patient_title'); ?></h2>
 
-            <img class="client" src="<?php the_field('patient_client'); ?>">
-            <img class="doctor" src="<?php the_field('patient_doctor'); ?>">
+            <img class="client" src="<?php the_field('patient_client'); ?>" title="patient image" alt="patient image">
+            <img class="doctor" src="<?php the_field('patient_doctor'); ?>" title="doctor image" alt="doctor image">
 
         </div>
 
@@ -84,7 +84,7 @@
                 <div class="quote-block block">
 
                     <h3>
-                        <img src="<?php the_field('clients_icon_left'); ?>"/>
+                        <img src="<?php the_field('clients_icon_left'); ?>" title="award winning" title="award winning" />
                         <?php the_field('clients_subtitle_left'); ?>
                     </h3>
 
@@ -104,7 +104,7 @@
                 <div class="clients-logos-block block">
 
                     <h3>
-                        <img src="<?php the_field('clients_icon_right'); ?>"/>
+                        <img src="<?php the_field('clients_icon_right'); ?>" title="client logos" alt="client logos" />
                         <?php the_field('clients_subtitle_right'); ?>
                     </h3>
 
@@ -113,7 +113,7 @@
                         <?php $i = 0; ?>
                         <?php while (have_rows('clients_logos_compagn_right')) : the_row(); ?>
                             <p id="logo-<?php echo $i ?>" class="logo">
-                                <img src="<?php echo get_sub_field('logo'); ?>">
+                                <img src="<?php echo get_sub_field('logo'); ?>" title="client logo" alt="client logo">
                             </p>
                             <?php $i++; ?>
                         <?php endwhile; ?>
@@ -132,14 +132,14 @@
 
     <article class="market full-size-block">
 
-        <img class="top-left" src=<?php the_field('market_top_left'); ?>>
-        <img class="top-right" src=<?php the_field('market_top_right'); ?>>
+        <img class="top-left" src=<?php the_field('market_top_left'); ?> title="app imagery" alt="app imagery">
+        <img class="top-right" src=<?php the_field('market_top_right'); ?> title="app imagery" alt="app imagery">
 
-        <img class="bottom-left" src=<?php the_field('market_bottom_left'); ?>>
-        <img class="bottom-right" src=<?php the_field('market_bottom_right'); ?>>
+        <img class="bottom-left" src=<?php the_field('market_bottom_left'); ?> title="app imagery" alt="app imagery">
+        <img class="bottom-right" src=<?php the_field('market_bottom_right'); ?> title="app imagery" alt="app imagery">
 
-        <img class="bottom-left-second" src=<?php the_field('market_second_bottom_left'); ?>>
-        <img class="bottom-right-second" src=<?php the_field('market_second_bottom_right'); ?>>
+        <img class="bottom-left-second" src=<?php the_field('market_second_bottom_left'); ?> title="app imagery" alt="app imagery">
+        <img class="bottom-right-second" src=<?php the_field('market_second_bottom_right'); ?> title="app imagery" alt="app imagery">
 
         <div class="content">
             <h2><?php the_field('market_first_title'); ?></h2>
@@ -163,7 +163,7 @@
 
             <div class="content intro-content">
                 <h1><?php the_field('intro_title'); ?></h1>
-                <img class="mobile-blob" src="<?php echo get_template_directory_uri() ?>/assets/images/masks/blob-intro.png">
+                <img class="mobile-blob" src="<?php echo get_template_directory_uri() ?>/assets/images/masks/blob-intro.png" alt="solid background color" title="solid background color">
             </div>
 
             <div class="scroll-cta">
@@ -194,7 +194,7 @@
                         <span class="type">n</span>
                         <span class="border"></span>
                     </p>
-                    <img src="<?php the_field('search_icon'); ?>">
+                    <img src="<?php the_field('search_icon'); ?>" title="search icon" alt="search icon">
                 </div>
                 <h3><?php the_field('search_subtitle'); ?></h3>
                 <p class="text"><?php the_field('search_text'); ?></p>
