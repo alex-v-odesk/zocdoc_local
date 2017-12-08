@@ -1,4 +1,3 @@
-
 <header class="sg-desktop-grid layout-header global " style="z-index: 999999999">
     <div class="sg-yellow-bg">
         <div class="sg-row sg-yellow-bg header-container">

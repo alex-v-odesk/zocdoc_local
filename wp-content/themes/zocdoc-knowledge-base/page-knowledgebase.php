@@ -90,13 +90,13 @@ endif;
   ?>
     <div class="container knowledge-base-cont">
       <div class="knowledge-body">
-        <div class="kb-image"><img src="<?php echo $patient_image; ?>" alt=""></div>
+        <div class="kb-image"><img src="<?php echo $patient_image; ?>" alt="patient" title="patient"></div>
         <h5 class="sg-header7" style="padding-bottom:20px;"><?php echo $patient_hed; ?></h5>
         <h5 class="sg-para3"><?php echo $patient_p; ?></h5>
         <a class='sg-prov-btn sg-btn-med prov-btn' href="http://support.zocdoc.com/patients">I'm a Patient</a>
       </div>
       <div class="knowledge-body">
-        <div class="kb-image"><img src="<?php echo $practice_image; ?>" alt=""></div>
+        <div class="kb-image"><img src="<?php echo $practice_image; ?>" alt="practice" title="practice"></div>
         <h5 class="sg-header7" style="padding-bottom:20px;"><?php echo $practice_hed; ?></h5>
         <h5 class="sg-para3"><?php echo $practice_p; ?></h5>
         <a class='sg-prov-btn sg-btn-med prov-btn' href="http://support.zocdoc.com/practices">I'm a Practice</a>
