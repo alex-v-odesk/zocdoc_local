@@ -56,7 +56,35 @@
     RB.track("view");
 </script>
 <!-- Rockerbox -->
-    
+
+<?php
+#twitter cards hack
+if(is_single() || is_page()) {
+ $twitter_url    = get_permalink();
+ $twitter_title  = get_the_title();
+ $twitter_desc   = get_the_excerpt();
+   $twitter_thumbs = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), full );
+    $twitter_thumb  = $twitter_thumbs[0];
+      if(!$twitter_thumb) {
+      $twitter_thumb = 'http://www.gravatar.com/avatar/8eb9ee80d39f13cbbad56da88ef3a6ee?rating=PG&size=75';
+    }
+  $twitter_name   = str_replace('@', '', get_the_author_meta('twitter'));
+?>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" value="<?php echo $twitter_url; ?>" />
+<meta name="twitter:title" value="<?php echo $twitter_title; ?>" />
+<meta name="twitter:description" value="<?php echo $twitter_desc; ?>" />
+<meta name="twitter:image" value="<?php echo $twitter_thumb; ?>" />
+<meta name="twitter:site" value="@zocdoc" />
+<?
+  if($twitter_name) {
+?>
+<meta name="twitter:creator" value="@<?php echo $twitter_name; ?>" />
+<?
+  }
+}
+?>
+
 </head>
 
 <body data-page-slug="<?php echo(basename(get_permalink())); ?>" <?php body_class(); ?>>
