@@ -61,7 +61,7 @@ get_header();
               <a href="<?php the_permalink(); ?>">
 
 								<div class="round-mask">
-										<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt=""/>
+										<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"/>
 								</div>
 
                 <h2 class="title"><?php the_title(); ?></h2>

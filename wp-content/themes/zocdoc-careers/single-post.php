@@ -268,7 +268,7 @@ if (have_posts()) {
 
                             <?php if($thumbnail) : ?>
                                 <div class="round-mask">
-                                    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt=""/>
+                                    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" title="<?php echo $post->post_title; ?>" alt="<?php echo $post->post_title; ?>"/>
                                 </div>
                             <?php else : ?>
                                 <div class="round-mask">
